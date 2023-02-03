@@ -1,0 +1,331 @@
+{
+    "locale": "sv",
+    "text": {
+        "": "Be appen att inte sp\u00e5ra",
+        "AiHunter": {
+            "PlayerCaught": "UPPT\u00c4CKT!",
+            "UserPlayerCaught": "UPPT\u00c4CKT!"
+        },
+        "Android": {
+            "Okay": "OK",
+            "StoragePermissionTitle": "Beg\u00e4rd beh\u00f6righet"
+        },
+        "Apple": {
+            "CFBundleDisplayName": "Hunt & Seek",
+            "CFBundleName": "huntandseek",
+            "NSCalendarsUsageDescription": "Some ad content may access calendar",
+            "NSLocationAlwaysUsageDescription": "Some ad content may want to access you location",
+            "NSLocationWhenInUseUsageDescription": "Some ad content may want to access you location",
+            "NSPhotoLibraryUsageDescription": "Some ad content may access the photo library"
+        },
+        "Cosmetic": {
+            "MissOut": "Missa inte",
+            "Swap": "BYT"
+        },
+        "CrossPromotion": {
+            "PlayNow": "SPELA NU!"
+        },
+        "EarningsQTE": {
+            "MultFormat": "{0}x"
+        },
+        "FTUE": {
+            "Bad": "INTE OK",
+            "Good": "BRA",
+            "GotIt": "JAG FATTAR!",
+            "Title": "G\u00f6m dig p\u00e5 en vettig plats"
+        },
+        "Feedback": {
+            "EmailBody": "ID: {0}\n\nFeedback :",
+            "EmailRecipient": "support@kwalee.com",
+            "EmailSubject": "Feedback f\u00f6r {0}"
+        },
+        "FindingPlayers": {
+            "Title": "HITTAR SPELARE"
+        },
+        "ForceUpgrade": {
+            "Body": "V\u00e4nligen ladda ner den senaste versionen fr\u00e5n app-butiken",
+            "Button": "Okej",
+            "Title": "Uppgradering tillg\u00e4nglig"
+        },
+        "GDPR": {
+            "AndroidRevokeConsent": "Great! We hope you enjoy your personalized ad experience, but if you ever change your mind, you can withdraw your consent by enabling the Opt out of Ads Personalization setting on your mobile device and then revisiting this app",
+            "AndroidRevokeConsentAlt": "Great! We hope you enjoy your personalized ad experience, but if you ever change your mind, you can withdraw your consent by enabling the Opt out of Ads Personalization setting on your mobile device and then revisiting this app",
+            "Body": "Depending on your privacy settings, Kwalee may provide personalised advertising by displaying targeted advertising within this game. Kwalee contracts with partners, who serve advertising into our games. The partners may collect and process personal data such as device identifiers, location data, about adverts that are served, viewed or clicked on. Further information including on Kwalee\u2019s partners can be found in our",
+            "BodyAlt": "We hope you are excited to play Hunt & Seek\n\nBefore you start, we\u2019d like to ask that you accept our Privacy Policy and that you allow us to collect and process your data in order to display ads that fit your interests better, and to improve the game and fix bugs etc.\nThe ads and data collection are managed by various partners that we have integrated into the game. \n\nFurther information on Kwalee\u2019s partners can be found in our",
+            "BodyNoTracking": "Depending on your privacy settings, our partners may collect analytical data from your gameplay sessions in order to improve the gaming experiences we provide.  Our partners may collect and process personal data such as device indentifiers and location data.  Further information including on Kwalee's partners can be found in our",
+            "Footer": "I understand that I will still see ads, but they may not be as relevant to my interests.",
+            "IAgree": "I ACCEPT",
+            "IAgreeAlt": "I AGREE",
+            "IosRevokeConsent": "Great! We hope you enjoy your personalized ad experience, but if you ever change your mind, you can withdraw your consent by enabling the Limit Ad Tracking setting on your mobile device and then revisiting this app",
+            "IosRevokeConsentAlt": "Great! We hope you enjoy your personalized ad experience, but if you ever change your mind, you can withdraw your consent by enabling the Limit Ad Tracking setting on your mobile device and then revisiting this app",
+            "IosRevokeConsentNoTracking": "Great! If you ever change your mind you can withdraw your consent by enabling the Limit Ad Tracking setting on your mobile device and then revisiting this app.",
+            "LearnMoreTickBox": "Learn More Tick Box",
+            "Link": "Privacy Policy which can be viewed here",
+            "NoThanks": "NO THANKS",
+            "OK": "OK",
+            "OneTapConfirm": "Confirm",
+            "OneTapDesc": "Sharing your data allows us to improve the game in the following ways:",
+            "OneTapGDPRToggleDesc": "I agree to allow my data to be collected by Kwalee and its partners as described in the Privacy Policy",
+            "OneTapLearnMore": "More Info",
+            "OneTapLearnMoreTitle": "Hunt & Seek",
+            "OneTapLetsGoButton": "LETS GO!",
+            "OneTapListItem1": "Offer targeted advertising more relevant to your likes and interests",
+            "OneTapListItem2": "Analyse the way you interact with the game, so we can improve it",
+            "OneTapListItem4": "A regular reminder alerting you that you haven't consented",
+            "OneTapListItem5": "More frequent ads and non-targeted advertising",
+            "OneTapMainBody1": "Before you start playing, we would like to get your consent to collect data from you including your device identifiers, and location data about adverts that are served, viewed or clicked on. This will allow us to provide better quality ads that are more relevant to your interests.",
+            "OneTapMainBody2": "Data is collected on behalf of our partners, as detailed in our <i>Privacy Policy</i> ",
+            "OneTapNotAgreeDesc": "If you don\u2019t consent to share your data you will experience:",
+            "OneTapPolicyToggleDesc": "I have read and accept Kwalee\u2019s privacy policy",
+            "OneTapTitle": "Hunt & Seek",
+            "PrivacyConfirm": "Confirm",
+            "PrivacyTickBox": "I allow Kwalee to utilize my advertisement data.",
+            "SelectAcceptCheck": "By checking the I ACCEPT box above, you consent that you have read and agree to our Privacy Policy and that you are over the age of 16.",
+            "Title": "PERSONALIZE YOUR EXPERIENCE",
+            "TitleAlt": "PRIVACY POLICY & GDPR CONSENT",
+            "TitleNoTracking": "HELP US IMPROVE OUR GAMES"
+        },
+        "GDPROneTap": {
+            "AreYouSureFixSettingsButton": "GO BACK",
+            "AreYouSureStage1ChangeAnyTime": "You can change this setting in the Application at any time.",
+            "AreYouSureStage1Desc": "If you choose to continue without giving consent to share your data (as detailed in our Privacy Policy) you will experience some changes to the game:",
+            "AreYouSureStage1ListItem1": "A regular reminder alerting you that you haven't consented",
+            "AreYouSureStage1ListItem2": "More frequent ads and non-targeted advertising",
+            "AreYouSureStage1Title": "Warning!",
+            "AreYouSureStage2ChangeAnyTime": "You can change this setting in the Application at any time.",
+            "AreYouSureStage2Desc": "You have chosen not to consent to share your data (as detailed in our Privacy Policy). This will change the way you experience the game in the following ways:",
+            "AreYouSureStage2ListItem1": "A regular reminder alerting you that you haven't consented",
+            "AreYouSureStage2ListItem2": "More frequent ads and non-targeted advertising",
+            "AreYouSureStage2Title": "Last Chance!",
+            "AreYouSureUnderstand": "Continue without Consent",
+            "InfoSettingsBackButton": "Back",
+            "InfoSettingsPrivacyPolicy": "<i>Privacy Policy</i>",
+            "InfoSettingsSaveButton": "SAVE",
+            "InfoSettingsTitle": "Data Consent Settings",
+            "InfoSettingsToggle": "I agree to allow my data to be collected by Kwalee and its partners as described in the Privacy Policy",
+            "PrivacySettingsButton": "Data Consent Settings",
+            "SupportButton": "CONTINUE"
+        },
+        "GDPRReminder": {
+            "PrivacyButton": "AD SETTINGS",
+            "Title": "Get less ads by adjusting privacy settings"
+        },
+        "GameOver": {
+            "YouFoundNobody": "Du hittade ingen",
+            "YouWereFound": "Du hittades"
+        },
+        "GameScreen": {
+            "BeTheHunter": "Var J\u00c4GAREN",
+            "FindOtherPlayers": "HITTA DE ANDRA SPELARNA",
+            "FoundThem": "Bra tr\u00e4ff!",
+            "Hide": "G\u00d6M!",
+            "Hunt": "JAGA!",
+            "SomeoneNearby": "N\u00e5gon i n\u00e4rheten"
+        },
+        "Generic": {
+            "CollectButton": "H\u00c4MTA",
+            "DoubleButton": "DUBBEL",
+            "GameName": "Hunt & Seek",
+            "TripleButton": "TRIPPEL"
+        },
+        "HideObject": {
+            "BEANBAG": "Bean Bag",
+            "BEAR": "Teddy Bear",
+            "BIN": "Bin",
+            "CARROT": "Carrot",
+            "CHAIR": "Dining Chair",
+            "CHRISTMASTREE": "Christmas Tree",
+            "COFFEETABLE": "Coffee Table",
+            "DUMPSTER": "Dumpster",
+            "FRIDGE": "Fridge",
+            "JACKHAMMER": "Jackhammer",
+            "LAMP": "Lamp",
+            "MONITOR": "Monitor",
+            "OFFICECHAIR": "Office Chair",
+            "OVEN": "Oven",
+            "PAINT": "Paint",
+            "PEPPER": "Pepper",
+            "PHOTOCOPIER": "Photocopier",
+            "PLANT": "Plant",
+            "PUMPKIN": "Pumpkin",
+            "ROCKINGCHAIR": "Rocking Chair",
+            "SAW": "Saw",
+            "SIDETABLE": "Nightstand",
+            "SINK": "Sink",
+            "TOILET": "Toilet",
+            "TOILETROLL": "Toarulle",
+            "TOOLBOX": "Toolbox",
+            "TURKEY": "Turkey",
+            "TV": "TV",
+            "WHEELBARROW": "Wheelbarrow"
+        },
+        "IDFA": {
+            "Accept": "Bekr\u00e4fta",
+            "Description": "Klicka p\u00e5 \u201dBekr\u00e4fta\u201d s\u00e5 att vi kan visa annonser som passar dig b\u00e4ttre.",
+            "DontAllowButton": "Till\u00e5t inte",
+            "NSUserTrackingUsageDescription": "Dina data kommer att anv\u00e4ndas f\u00f6r att ge dig b\u00e4ttre anpassade annonser",
+            "Title": "Ditt spel"
+        },
+        "IDFAFullScreen": {
+            "Next": "N\u00c4STA",
+            "PartA": "Den h\u00e4r appen \u00e4r gratis tack vare reklam",
+            "PartB": "Hj\u00e4lp oss forts\u00e4tta med det genom att trycka p\u00e5 Till\u00e5t n\u00e4r den visas",
+            "PartC": "De annonser som \u00e4r mest relevanta f\u00f6r dig kommer att visas",
+            "PartD": "S\u00e5 kommer v\u00e5ra prisbel\u00f6nta spel forts\u00e4tta att vara gratis"
+        },
+        "LevelCompleteFlow": {
+            "PlayerSurvived": "RUNDA VUNNEN!"
+        },
+        "LevelName": {
+            "backyard": "Bakg\u00e5rd",
+            "castle": "Slott",
+            "city_park": "Stadspark",
+            "construction": "Byggnad",
+            "convenience_store": "Butik",
+            "farm": "Bondg\u00e5rd",
+            "house": "Hus",
+            "office": "Kontor",
+            "restaurant": "Restaurang",
+            "school": "Skola"
+        },
+        "LevelNumberDisplay": {
+            "Level": "NIV\u00c5 {0}"
+        },
+        "LevelResultScreen": {
+            "RoundWon": "RUNDA VUNNEN!",
+            "YouEarned": "Du tj\u00e4nade ihop:"
+        },
+        "LoadingScreen": {
+            "Loading": "LADDAR"
+        },
+        "OfflineEarnings": {
+            "SubTitle": "N\u00e4r du var borta tj\u00e4nade du:",
+            "Title": "V\u00c4LKOMMEN TILLBAKA"
+        },
+        "Player": {
+            "Name": "DU"
+        },
+        "PopUpChestUnlock": {
+            "LoseIt": "Nej tack",
+            "Open": "\u00d6PPNA"
+        },
+        "PopUpChestUnlocked": {
+            "NewHunter": "NY J\u00c4GARE",
+            "Unlocked": "UPPL\u00c5ST!"
+        },
+        "PopUpForceConnection": {
+            "Okay": "OK",
+            "Title": "Ingen internetanslutning"
+        },
+        "PopUpHideFTUE": {
+            "Part1": "A",
+            "Part2": "Nightstand",
+            "Part3": "should hide by...",
+            "Part4": "The Bed!"
+        },
+        "PopUpNewLevelUnlocked": {
+            "NoThanks": "Nej tack",
+            "Title": "New niv\u00e5 uppl\u00e5st!",
+            "VideoReward": "L\u00c5SA UPP SPECIELLA F\u00d6REM\u00c5L"
+        },
+        "PopUpProgressReward": {
+            "Get": "H\u00c4MTA"
+        },
+        "PopUpRvFirstTimeSell": {
+            "Accept": "Var J\u00c4GAREN",
+            "MissOut": "Nej tack"
+        },
+        "PopUpSettings": {
+            "PrivacyPolicy": "Sekretesspolicy",
+            "Title": "SETTINGS"
+        },
+        "PopupClearInterstitial": {
+            "Title": "Tryck f\u00f6r att forts\u00e4tta"
+        },
+        "PopupNoConnection": {
+            "NoAdToShow": "Tillf\u00e4lligt otillg\u00e4nglig\n F\u00f6rs\u00f6k igen senare.",
+            "NoConnection": "INGEN ANSLUTNING",
+            "Okay": "OK"
+        },
+        "ProgressReward": {
+            "Title": "NY J\u00c4GARE!"
+        },
+        "ProjectPush": {
+            "MaxOfflineMessage": "Du har tj\u00e4nat ihop {0} $. Dags att uppgradera!",
+            "MaxOfflineTitle": "Det v\u00e4ntar pengar p\u00e5 dig!"
+        },
+        "PushMessage": {
+            "Body1": "Kom tillbaka f\u00f6r att visa dina g\u00f6mmande f\u00e4rdigheter",
+            "Body2": "Se till att ingen smyger runt p\u00e5 kontoret",
+            "Body3": "Ta f\u00f6rem\u00e5len innan det \u00e4r f\u00f6r sent!",
+            "Body4": "F\u00e5 nya platser att g\u00f6mma sig fr\u00e5n j\u00e4garen",
+            "Title1": "Piggy \u00e4r p\u00e5 jakt!",
+            "Title2": "R\u00f6r sig rekvisitan?",
+            "Title3": "Nya f\u00f6rem\u00e5l att l\u00e5sa upp!",
+            "Title4": "L\u00e5s upp slottet nu!"
+        },
+        "RatingWidget": {
+            "Feedback": "Feedback",
+            "HighNoPrize": "Betygs\u00e4tt oss med 1-5 stj\u00e4rnor",
+            "HighPrize": "Betygs\u00e4tt oss med 1-5 stj\u00e4rnor",
+            "Low": "Betygs\u00e4tt oss med 1-5 stj\u00e4rnor",
+            "PleaseRate": "Betygs\u00e4tt oss med 1-5 stj\u00e4rnor",
+            "Rate": "BETYGS\u00c4TT",
+            "Title": "Ge oss betyg"
+        },
+        "ResultsScreen": {
+            "WinXMoreTimes": "Vinn {0} fler g\u00e5nger f\u00f6r att l\u00e5sa upp n\u00e4sta niv\u00e5!",
+            "WinXMoreTimesSingle": "Vinn 1 g\u00e5ng till f\u00f6r att l\u00e5sa upp n\u00e4sta niv\u00e5!"
+        },
+        "RewardChest": {
+            "Found": "KISTA HITTAD"
+        },
+        "Settings": {
+            "RestorePurchases": "\u00c5TERST\u00c4LL K\u00d6P"
+        },
+        "SettingsScreen": {
+            "EmailBody": "ID: {0}\n\nFeedback :",
+            "EmailRecipient": "support@kwalee.com",
+            "EmailSubject": "Feedback f\u00f6r {0}"
+        },
+        "ShopItem": {
+            "Back": "Tillbaka",
+            "Format": "{0}",
+            "RV": "Gratis",
+            "StartScreenShop": "Butik",
+            "UnlockAtLevel": "Niv\u00e5"
+        },
+        "StartScreen": {
+            "TapToStart": "PEKA F\u00d6R ATT STARTA"
+        },
+        "SubscriptionPopup": {
+            "NoAds": "INGEN REKLAM",
+            "PrivacyPolicy": "SEKRETESSPOLICY",
+            "RemoveAds": "TA BORT ANNONSER",
+            "SmallButtonText": "{0} DAGARS GRATIS TESTPERIOD, SEDAN {1} PER VECKA",
+            "SmallPrintAndroid": "DENNA PRENUMERATION F\u00d6RNYAS AUTOMATISKT. PRENUMERATIONEN F\u00d6RNYAS S\u00c5VIDA DEN INTE ST\u00c4NGS AV MINST 24 TIMMAR INNAN PERIODENS SLUT. \u00c4VEN BETALNING F\u00d6R F\u00d6RNYELSE G\u00d6RS VIA KONTOT. DU KAN ST\u00c4NGA AV DEN I KONTOINST\u00c4LLNINGARNA. OANV\u00c4NDA PERIODER KOMMER ATT F\u00d6RVERKAS N\u00c4R ANV\u00c4NDAREN K\u00d6PER EN PRENUMERATION. ",
+            "SmallPrintIOS": "DENNA PRENUMERATION F\u00d6RNYAS AUTOMATISKT. BETALNING G\u00d6RS VIA ITUNES-KONTO EFTER BEKR\u00c4FTELSE. PRENUMERATIONEN F\u00d6RNYAS S\u00c5VIDA DEN INTE ST\u00c4NGS AV MINST 24 TIMMAR INNAN PERIODENS SLUT. \u00c4VEN BETALNING F\u00d6R F\u00d6RNYELSE G\u00d6RS VIA KONTOT. DU KAN ST\u00c4NGA AV DEN I KONTOINST\u00c4LLNINGARNA. OANV\u00c4NDA PERIODER KOMMER ATT F\u00d6RVERKAS N\u00c4R ANV\u00c4NDAREN K\u00d6PER EN PRENUMERATION. ",
+            "TermsOfUse": "ANV\u00c4NDARVILLKOR",
+            "Title": "VIP",
+            "TryForFree": "PR\u00d6VA GRATIS",
+            "vipMembership": "VIP-MEDLEMSKAP"
+        },
+        "Upgrade": {
+            "GenericLevel": "NIV\u00c5 {0}",
+            "Offline": "INTJ\u00c4NAT OFFLINE",
+            "OfflineEarningsBenefitFormat": "{0} $/min",
+            "OfflineEarningsCostFormat": "${0}",
+            "Speed": "FART",
+            "SpeedBenefitFormat": "{0}",
+            "SpeedCostFormat": "${0}",
+            "Time": "TID",
+            "TimeBenefitFormat": "{0} ",
+            "TimeCostFormat": "${0}"
+        },
+        "UpgradeButtons": {
+            "Max": "MAX",
+            "Upgrade": "UPPGRADERING"
+        }
+    },
+    "version": 0
+}

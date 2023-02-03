@@ -1,0 +1,86 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using DG.Tweening;
+public class AIPlayer : MonoBehaviour
+{
+    [SerializeField] bool checkAIBoss;
+    public bool check;
+    private Vector3 posRandom;
+    public Transform archor;
+    public bool isDealAI;
+    void Start()
+    {
+        isDealAI = false;
+        checkAIBoss = false;
+        check = false;
+        StartCoroutine(WaitMove());
+    }
+
+    public void MoveRandom()
+    {
+        posRandom = new Vector3(archor.position.x + Random.Range(-5, 5), 0, archor.position.z + Random.Range(-4, 5));
+        gameObject.transform.forward = Direction(posRandom);
+        if (!check)
+        {
+            transform.DOMove(posRandom, SetTime(posRandom)).SetEase(Ease.Linear);
+        }
+    }
+
+    private Vector3 Direction(Vector3 pos)
+    {
+        Vector3 direction = pos - gameObject.transform.position;
+        //direction.SetY(0f);
+        direction.Normalize();
+        return direction;
+    }
+    private float SetTime(Vector3 pos)
+    {
+        float distance = Vector3.Distance(pos, gameObject.transform.position);
+        return distance / 1;
+    }
+
+
+    private IEnumerator WaitMove()
+    {
+        yield return new WaitForSeconds(3f);
+        MoveRandom();
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Arrow"))
+        {
+            checkAIBoss = true;
+            gameObject.transform.DOScale(new Vector3(1, 1, 1), 1f);
+            GameManager.instance.countAI--;
+            StartCoroutine(WaitActiveFalse());
+
+        }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("BossAI"))
+        {
+            StartCoroutine(WaitTimeCheckCollision());
+        }
+        if(collision.gameObject.CompareTag("Player"))
+        {
+            StartCoroutine(WaitTimeCheckCollision());
+        }
+    }
+    private IEnumerator WaitActiveFalse()
+    {
+        yield return new WaitForSeconds(1f);
+        gameObject.SetActive(false);
+    }
+    private IEnumerator WaitTimeCheckCollision()
+    {
+        yield return new WaitForSeconds(UIManager.ins.timeCountdown);
+        {
+            gameObject.SetActive(false);
+            GameManager.instance.countAI--;
+            GameManager.instance.OnWin();
+        }
+
+    }
+}

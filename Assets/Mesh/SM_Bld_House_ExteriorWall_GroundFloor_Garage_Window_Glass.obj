@@ -1,0 +1,16 @@
+g SM_Bld_House_ExteriorWall_GroundFloor_Garage_Window_Glass
+v -0.003698124 -2.722667E-18 0.001369098
+v -0.003698124 5.473507E-19 -0.006267475
+v 0.00268623 5.473507E-19 -0.006267475
+v 0.00268623 -2.722667E-18 0.001369098
+vt 0.0280212 0.528523
+vt 0.0280212 0.9684769
+vt 0.471156 0.9684769
+vt 0.471156 0.528523
+vn 0 1 0
+vn 0 1 0
+vn 0 1 0
+vn 0 1 0
+g SM_Bld_House_ExteriorWall_GroundFloor_Garage_Window_Glass_0
+f 3/3/3 2/2/2 1/1/1
+f 4/4/4 3/3/3 1/1/1

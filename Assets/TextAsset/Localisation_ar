@@ -1,0 +1,331 @@
+{
+    "locale": "ar",
+    "text": {
+        "": "Ask app not to track",
+        "AiHunter": {
+            "PlayerCaught": "DISCOVERED!",
+            "UserPlayerCaught": "DISCOVERED!"
+        },
+        "Android": {
+            "Okay": "OK",
+            "StoragePermissionTitle": "Requested Permission"
+        },
+        "Apple": {
+            "CFBundleDisplayName": "Hunt & Seek",
+            "CFBundleName": "huntandseek",
+            "NSCalendarsUsageDescription": "Some ad content may access calendar",
+            "NSLocationAlwaysUsageDescription": "Some ad content may want to access you location",
+            "NSLocationWhenInUseUsageDescription": "Some ad content may want to access you location",
+            "NSPhotoLibraryUsageDescription": "Some ad content may access the photo library"
+        },
+        "Cosmetic": {
+            "MissOut": "Miss Out",
+            "Swap": "SWAP"
+        },
+        "CrossPromotion": {
+            "PlayNow": "PLAY NOW!"
+        },
+        "EarningsQTE": {
+            "MultFormat": "{0}x"
+        },
+        "FTUE": {
+            "Bad": "BAD",
+            "Good": "GOOD",
+            "GotIt": "GOT IT!",
+            "Title": "Find a good hiding spot!"
+        },
+        "Feedback": {
+            "EmailBody": "ID: {0}\n\nFeedback :",
+            "EmailRecipient": "support@kwalee.com",
+            "EmailSubject": "Feedback for {0}"
+        },
+        "FindingPlayers": {
+            "Title": "FINDING PLAYERS"
+        },
+        "ForceUpgrade": {
+            "Body": "Please download the latest version from the app store",
+            "Button": "Okay",
+            "Title": "Upgrade Available"
+        },
+        "GDPR": {
+            "AndroidRevokeConsent": "Great! We hope you enjoy your personalized ad experience, but if you ever change your mind, you can withdraw your consent by enabling the Opt out of Ads Personalization setting on your mobile device and then revisiting this app",
+            "AndroidRevokeConsentAlt": "Great! We hope you enjoy your personalized ad experience, but if you ever change your mind, you can withdraw your consent by enabling the Opt out of Ads Personalization setting on your mobile device and then revisiting this app",
+            "Body": "Depending on your privacy settings, Kwalee may provide personalised advertising by displaying targeted advertising within this game.\u2002\u2002Kwalee contracts with partners, who serve advertising into our games.\u2002\u2002The partners may collect and process personal data such as device identifiers, location data, about adverts that are served, viewed or clicked on.\u2002\u2002Further information including on Kwalee\u2019s partners can be found in our",
+            "BodyAlt": "We hope you are excited to play Hunt & Seek\n\nBefore you start, we\u2019d like to ask that you accept our Privacy Policy and that you allow us to collect and process your data in order to display ads that fit your interests better, and to improve the game and fix bugs etc.\nThe ads and data collection are managed by various partners that we have integrated into the game. \n\nFurther information on Kwalee\u2019s partners can be found in our",
+            "BodyNoTracking": "Depending on your privacy settings, our partners may collect analytical data from your gameplay sessions in order to improve the gaming experiences we provide.  Our partners may collect and process personal data such as device indentifiers and location data.  Further information including on Kwalee's partners can be found in our",
+            "Footer": "I understand that I will still see ads, but they may not be as relevant to my interests.",
+            "IAgree": "I ACCEPT",
+            "IAgreeAlt": "I AGREE",
+            "IosRevokeConsent": "Great! We hope you enjoy your personalized ad experience, but if you ever change your mind, you can withdraw your consent by enabling the Limit Ad Tracking setting on your mobile device and then revisiting this app",
+            "IosRevokeConsentAlt": "Great! We hope you enjoy your personalized ad experience, but if you ever change your mind, you can withdraw your consent by enabling the Limit Ad Tracking setting on your mobile device and then revisiting this app",
+            "IosRevokeConsentNoTracking": "Great! If you ever change your mind you can withdraw your consent by enabling the Limit Ad Tracking setting on your mobile device and then revisiting this app.",
+            "LearnMoreTickBox": "Learn More Tick Box",
+            "Link": "Privacy Policy which can be viewed here",
+            "NoThanks": "NO THANKS",
+            "OK": "OK",
+            "OneTapConfirm": "Confirm",
+            "OneTapDesc": "Sharing your data allows us to improve the game in the following ways:",
+            "OneTapGDPRToggleDesc": "I agree to allow my data to be collected by Kwalee and its partners as described in the Privacy Policy",
+            "OneTapLearnMore": "More Info",
+            "OneTapLearnMoreTitle": "Hunt & Seek",
+            "OneTapLetsGoButton": "LETS GO!",
+            "OneTapListItem1": "Offer targeted advertising more relevant to your likes and interests",
+            "OneTapListItem2": "Analyse the way you interact with the game, so we can improve it",
+            "OneTapListItem4": "A regular reminder alerting you that you haven't consented",
+            "OneTapListItem5": "More frequent ads and non-targeted advertising",
+            "OneTapMainBody1": "Before you start playing, we would like to get your consent to collect data from you including your device identifiers, and location data about adverts that are served, viewed or clicked on. This will allow us to provide better quality ads that are more relevant to your interests.",
+            "OneTapMainBody2": "Data is collected on behalf of our partners, as detailed in our <i>Privacy Policy</i> ",
+            "OneTapNotAgreeDesc": "If you don\u2019t consent to share your data you will experience:",
+            "OneTapPolicyToggleDesc": "I have read and accept Kwalee\u2019s privacy policy",
+            "OneTapTitle": "Hunt & Seek",
+            "PrivacyConfirm": "Confirm",
+            "PrivacyTickBox": "I allow Kwalee to utilize my advertisement data.",
+            "SelectAcceptCheck": "By checking the I ACCEPT box above, you consent that you have read and agree to our Privacy Policy and that you are over the age of 16.",
+            "Title": "PERSONALIZE YOUR EXPERIENCE",
+            "TitleAlt": "PRIVACY POLICY & GDPR CONSENT",
+            "TitleNoTracking": "HELP US IMPROVE OUR GAMES"
+        },
+        "GDPROneTap": {
+            "AreYouSureFixSettingsButton": "GO BACK",
+            "AreYouSureStage1ChangeAnyTime": "You can change this setting in the Application at any time.",
+            "AreYouSureStage1Desc": "If you choose to continue without giving consent to share your data (as detailed in our Privacy Policy) you will experience some changes to the game:",
+            "AreYouSureStage1ListItem1": "A regular reminder alerting you that you haven't consented",
+            "AreYouSureStage1ListItem2": "More frequent ads and non-targeted advertising",
+            "AreYouSureStage1Title": "Warning!",
+            "AreYouSureStage2ChangeAnyTime": "You can change this setting in the Application at any time.",
+            "AreYouSureStage2Desc": "You have chosen not to consent to share your data (as detailed in our Privacy Policy). This will change the way you experience the game in the following ways:",
+            "AreYouSureStage2ListItem1": "A regular reminder alerting you that you haven't consented",
+            "AreYouSureStage2ListItem2": "More frequent ads and non-targeted advertising",
+            "AreYouSureStage2Title": "Last Chance!",
+            "AreYouSureUnderstand": "Continue without Consent",
+            "InfoSettingsBackButton": "Back",
+            "InfoSettingsPrivacyPolicy": "<i>Privacy Policy</i>",
+            "InfoSettingsSaveButton": "SAVE",
+            "InfoSettingsTitle": "Data Consent Settings",
+            "InfoSettingsToggle": "I agree to allow my data to be collected by Kwalee and its partners as described in the Privacy Policy",
+            "PrivacySettingsButton": "Data Consent Settings",
+            "SupportButton": "CONTINUE"
+        },
+        "GDPRReminder": {
+            "PrivacyButton": "AD SETTINGS",
+            "Title": "Get less ads by adjusting privacy settings"
+        },
+        "GameOver": {
+            "YouFoundNobody": "You found nobody",
+            "YouWereFound": "You were found"
+        },
+        "GameScreen": {
+            "BeTheHunter": "Be the <b><color=#000249>HUNTER</color></b>",
+            "FindOtherPlayers": "FIND THE OTHER PLAYERS",
+            "FoundThem": "Found Them",
+            "Hide": "HIDE!",
+            "Hunt": "HUNT!",
+            "SomeoneNearby": "Someone Nearby"
+        },
+        "Generic": {
+            "CollectButton": "COLLECT",
+            "DoubleButton": "DOUBLE",
+            "GameName": "Hunt & Seek",
+            "TripleButton": "TRIPLE"
+        },
+        "HideObject": {
+            "BEANBAG": "Bean Bag",
+            "BEAR": "Teddy Bear",
+            "BIN": "Bin",
+            "CARROT": "Carrot",
+            "CHAIR": "Dining Chair",
+            "CHRISTMASTREE": "Christmas Tree",
+            "COFFEETABLE": "Coffee Table",
+            "DUMPSTER": "Dumpster",
+            "FRIDGE": "Fridge",
+            "JACKHAMMER": "Jackhammer",
+            "LAMP": "Lamp",
+            "MONITOR": "Monitor",
+            "OFFICECHAIR": "Office Chair",
+            "OVEN": "Oven",
+            "PAINT": "Paint",
+            "PEPPER": "Pepper",
+            "PHOTOCOPIER": "Photocopier",
+            "PLANT": "Plant",
+            "PUMPKIN": "Pumpkin",
+            "ROCKINGCHAIR": "Rocking Chair",
+            "SAW": "Saw",
+            "SIDETABLE": "Nightstand",
+            "SINK": "Sink",
+            "TOILET": "Toilet",
+            "TOILETROLL": "Toilet Roll",
+            "TOOLBOX": "Toolbox",
+            "TURKEY": "Turkey",
+            "TV": "TV",
+            "WHEELBARROW": "Wheelbarrow"
+        },
+        "IDFA": {
+            "Accept": "Confirm",
+            "Description": "Click \"Confirm\" to allow us to serve you ads more suited to your likes.",
+            "DontAllowButton": "Don't allow",
+            "NSUserTrackingUsageDescription": "Your data will be used to provide you better personalized ads",
+            "Title": "Customize Your Game"
+        },
+        "IDFAFullScreen": {
+            "Next": "Next",
+            "PartA": "This app is free because it is funded by adverts",
+            "PartB": "Help to keep it this way by tapping 'Allow' when prompted",
+            "PartC": "You'll see ads that are more relevant to you",
+            "PartD": "And our award-winning games will continue to be free"
+        },
+        "LevelCompleteFlow": {
+            "PlayerSurvived": "ROUND WON!"
+        },
+        "LevelName": {
+            "backyard": "Backyard",
+            "castle": "Castle",
+            "city_park": "City Park",
+            "construction": "Construction",
+            "convenience_store": "Store",
+            "farm": "Farm",
+            "house": "House",
+            "office": "Office",
+            "restaurant": "Restaurant",
+            "school": "School"
+        },
+        "LevelNumberDisplay": {
+            "Level": "LEVEL {0}"
+        },
+        "LevelResultScreen": {
+            "RoundWon": "ROUND WON!",
+            "YouEarned": "You Earned: "
+        },
+        "LoadingScreen": {
+            "Loading": "LOADING"
+        },
+        "OfflineEarnings": {
+            "SubTitle": "While you were away you earned:",
+            "Title": "WELCOME BACK!"
+        },
+        "Player": {
+            "Name": "YOU"
+        },
+        "PopUpChestUnlock": {
+            "LoseIt": "No Thanks",
+            "Open": "OPEN"
+        },
+        "PopUpChestUnlocked": {
+            "NewHunter": "NEW HUNTER",
+            "Unlocked": "UNLOCKED!"
+        },
+        "PopUpForceConnection": {
+            "Okay": "OK",
+            "Title": "No internet connection"
+        },
+        "PopUpHideFTUE": {
+            "Part1": "A",
+            "Part2": "Nightstand",
+            "Part3": "should hide by...",
+            "Part4": "The Bed!"
+        },
+        "PopUpNewLevelUnlocked": {
+            "NoThanks": "No Thanks",
+            "Title": "New Level Unlocked!",
+            "VideoReward": "UNLOCK SPECIAL OBJECTS"
+        },
+        "PopUpProgressReward": {
+            "Get": "CLAIM"
+        },
+        "PopUpRvFirstTimeSell": {
+            "Accept": "Be the <b><color=#000249>HUNTER</color></b>",
+            "MissOut": "No Thanks"
+        },
+        "PopUpSettings": {
+            "PrivacyPolicy": "Privacy Policy",
+            "Title": "SETTINGS"
+        },
+        "PopupClearInterstitial": {
+            "Title": "Tap To Continue"
+        },
+        "PopupNoConnection": {
+            "NoAdToShow": "Currently unavailable\nPlease try again later.",
+            "NoConnection": "NO CONNECTION",
+            "Okay": "OK"
+        },
+        "ProgressReward": {
+            "Title": "NEW HUNTER!"
+        },
+        "ProjectPush": {
+            "MaxOfflineMessage": "You\u2019ve earned ${0}, time to upgrade!",
+            "MaxOfflineTitle": "Cash waiting!"
+        },
+        "PushMessage": {
+            "Body1": "Come back to show off your hiding skills",
+            "Body2": "Make sure no one is sneaking around the office",
+            "Body3": "Grab these objects today before it's too late!",
+            "Body4": "Get new places to hide from the hunter",
+            "Title1": "Piggy is on the hunt!",
+            "Title2": "Are these props moving?",
+            "Title3": "New objects to unlock!",
+            "Title4": "Unlock the castle now!"
+        },
+        "RatingWidget": {
+            "Feedback": "Feedback",
+            "HighNoPrize": "Please rate us from 1-5 stars",
+            "HighPrize": "Please rate us from 1-5 stars",
+            "Low": "Please rate us from 1-5 stars",
+            "PleaseRate": "Please rate us from 1-5 stars",
+            "Rate": "RATE",
+            "Title": "Would you like to rate us?"
+        },
+        "ResultsScreen": {
+            "WinXMoreTimes": "Win {0} more times to unlock the next level!",
+            "WinXMoreTimesSingle": "Win 1 more time to unlock the next level!"
+        },
+        "RewardChest": {
+            "Found": "CHEST FOUND"
+        },
+        "Settings": {
+            "RestorePurchases": "RESTORE PURCHASES"
+        },
+        "SettingsScreen": {
+            "EmailBody": "ID: {0}\n\nFeedback :",
+            "EmailRecipient": "support@kwalee.com",
+            "EmailSubject": "Feedback for {0}"
+        },
+        "ShopItem": {
+            "Back": "Back",
+            "Format": "{0}",
+            "RV": "Free",
+            "StartScreenShop": "Shop",
+            "UnlockAtLevel": "Level"
+        },
+        "StartScreen": {
+            "TapToStart": "TAP TO START"
+        },
+        "SubscriptionPopup": {
+            "NoAds": "NO ADS",
+            "PrivacyPolicy": "PRIVACY POLICY",
+            "RemoveAds": "REMOVE ADS",
+            "SmallButtonText": "{0} DAYS FREE TRIAL, THEN {1} PER WEEK",
+            "SmallPrintAndroid": "THIS IS AN AUTO-RENEWABLE SUBSCRIPTION. SUBSCRIPTION IS RENEWED UNLESS TURNED OFF AT LEAST 24 HOURS BEFORE THE PERIOD ENDS; ACCOUNT WILL BE CHARGED FOR RENEWAL AS WELL. YOU MAY TURN IT OFF IN ACCOUNT SETTINGS. ANY UNUSED PORTION OF A FREE TRIAL PERIOD WILL BE FORFEITED WHEN THE USER PURCHASES A SUBSCRIPTION. ",
+            "SmallPrintIOS": "THIS IS AN AUTO-RENEWABLE SUBSCRIPTION. PAYMENT IS CHARGED TO ITUNES ACCOUNT AT CONFIRMATION. SUBSCRIPTION IS RENEWED UNLESS TURNED OFF AT LEAST 24 HOURS BEFORE THE PERIOD ENDS; ACCOUNT WILL BE CHARGED FOR RENEWAL AS WELL. YOU MAY TURN IT OFF IN ACCOUNT SETTINGS. ANY UNUSED PORTION OF A FREE TRIAL PERIOD WILL BE FORFEITED WHEN THE USER PURCHASES A SUBSCRIPTION. ",
+            "TermsOfUse": "TERMS OF USE",
+            "Title": "VIP",
+            "TryForFree": "TRY FOR FREE",
+            "vipMembership": "VIP MEMBERSHIP"
+        },
+        "Upgrade": {
+            "GenericLevel": "LEVEL {0}",
+            "Offline": "OFFLINE EARNINGS",
+            "OfflineEarningsBenefitFormat": "${0} / min",
+            "OfflineEarningsCostFormat": "${0}",
+            "Speed": "SPEED",
+            "SpeedBenefitFormat": "{0}",
+            "SpeedCostFormat": "${0}",
+            "Time": "TIME",
+            "TimeBenefitFormat": "{0} ",
+            "TimeCostFormat": "${0}"
+        },
+        "UpgradeButtons": {
+            "Max": "MAX",
+            "Upgrade": "UPGRADE"
+        }
+    },
+    "version": 0
+}

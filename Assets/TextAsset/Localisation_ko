@@ -1,0 +1,331 @@
+{
+    "locale": "ko",
+    "text": {
+        "": "\uc571\uc774 \ucd94\uc801\ud558\uc9c0 \uc54a\ub3c4\ub85d \uc694\uccad",
+        "AiHunter": {
+            "PlayerCaught": "\ubc1c\uacac\ub418\uc5c8\uc2b5\ub2c8\ub2e4!",
+            "UserPlayerCaught": "\ubc1c\uacac\ub418\uc5c8\uc2b5\ub2c8\ub2e4!"
+        },
+        "Android": {
+            "Okay": "OK",
+            "StoragePermissionTitle": "\uc694\uccad\ub41c \uad8c\ud55c"
+        },
+        "Apple": {
+            "CFBundleDisplayName": "\ubcc0\uc2e0 \uc228\ubc14\uaf2d\uc9c8",
+            "CFBundleName": "huntandseek",
+            "NSCalendarsUsageDescription": "Some ad content may access calendar",
+            "NSLocationAlwaysUsageDescription": "Some ad content may want to access you location",
+            "NSLocationWhenInUseUsageDescription": "Some ad content may want to access you location",
+            "NSPhotoLibraryUsageDescription": "Some ad content may access the photo library"
+        },
+        "Cosmetic": {
+            "MissOut": "Miss Out",
+            "Swap": "\uad50\uccb4"
+        },
+        "CrossPromotion": {
+            "PlayNow": "\uc9c0\uae08 \ud50c\ub808\uc774\ud558\uc138\uc694!"
+        },
+        "EarningsQTE": {
+            "MultFormat": "{0}x"
+        },
+        "FTUE": {
+            "Bad": "\ub098\uc068",
+            "Good": "\uc88b\uc2b5\ub2c8\ub2e4",
+            "GotIt": "\uc54c\uaca0\uc2b5\ub2c8\ub2e4!",
+            "Title": "\uadf8\ub7f4 \ub4ef\ud55c \uc7a5\uc18c\uc5d0 \ubab8\uc744 \uc228\uae30\uc138\uc694"
+        },
+        "Feedback": {
+            "EmailBody": "ID: {0}\n\nFeedback :",
+            "EmailRecipient": "support@kwalee.com",
+            "EmailSubject": "\ubcc0\uc2e0 \uc228\ubc14\uaf2d\uc9c8 \ud53c\ub4dc\ubc31"
+        },
+        "FindingPlayers": {
+            "Title": "\ud50c\ub808\uc774\uc5b4 \ucc3e\uae30"
+        },
+        "ForceUpgrade": {
+            "Body": "\uc571 \uc2a4\ud1a0\uc5b4\uc5d0\uc11c \ucd5c\uc2e0 \ubc84\uc804\uc744 \ub2e4\uc6b4\ub85c\ub4dc\ud558\uc138\uc694",
+            "Button": "\ud655\uc778",
+            "Title": "\uc5c5\uadf8\ub808\uc774\ub4dc \uc774\uc6a9 \uac00\ub2a5"
+        },
+        "GDPR": {
+            "AndroidRevokeConsent": "Great! We hope you enjoy your personalized ad experience, but if you ever change your mind, you can withdraw your consent by enabling the Opt out of Ads Personalization setting on your mobile device and then revisiting this app",
+            "AndroidRevokeConsentAlt": "Great! We hope you enjoy your personalized ad experience, but if you ever change your mind, you can withdraw your consent by enabling the Opt out of Ads Personalization setting on your mobile device and then revisiting this app",
+            "Body": "Depending on your privacy settings, Kwalee may provide personalised advertising by displaying targeted advertising within this game. Kwalee contracts with partners, who serve advertising into our games. The partners may collect and process personal data such as device identifiers, location data, about adverts that are served, viewed or clicked on. Further information including on Kwalee\u2019s partners can be found in our",
+            "BodyAlt": "We hope you are excited to play Hunt & Seek\n\nBefore you start, we\u2019d like to ask that you accept our Privacy Policy and that you allow us to collect and process your data in order to display ads that fit your interests better, and to improve the game and fix bugs etc.\nThe ads and data collection are managed by various partners that we have integrated into the game. \n\nFurther information on Kwalee\u2019s partners can be found in our",
+            "BodyNoTracking": "Depending on your privacy settings, our partners may collect analytical data from your gameplay sessions in order to improve the gaming experiences we provide.  Our partners may collect and process personal data such as device indentifiers and location data.  Further information including on Kwalee's partners can be found in our",
+            "Footer": "I understand that I will still see ads, but they may not be as relevant to my interests.",
+            "IAgree": "I ACCEPT",
+            "IAgreeAlt": "I AGREE",
+            "IosRevokeConsent": "Great! We hope you enjoy your personalized ad experience, but if you ever change your mind, you can withdraw your consent by enabling the Limit Ad Tracking setting on your mobile device and then revisiting this app",
+            "IosRevokeConsentAlt": "Great! We hope you enjoy your personalized ad experience, but if you ever change your mind, you can withdraw your consent by enabling the Limit Ad Tracking setting on your mobile device and then revisiting this app",
+            "IosRevokeConsentNoTracking": "Great! If you ever change your mind you can withdraw your consent by enabling the Limit Ad Tracking setting on your mobile device and then revisiting this app.",
+            "LearnMoreTickBox": "Learn More Tick Box",
+            "Link": "Privacy Policy which can be viewed here",
+            "NoThanks": "NO THANKS",
+            "OK": "OK",
+            "OneTapConfirm": "Confirm",
+            "OneTapDesc": "Sharing your data allows us to improve the game in the following ways:",
+            "OneTapGDPRToggleDesc": "I agree to allow my data to be collected by Kwalee and its partners as described in the Privacy Policy",
+            "OneTapLearnMore": "More Info",
+            "OneTapLearnMoreTitle": "Hunt & Seek",
+            "OneTapLetsGoButton": "LETS GO!",
+            "OneTapListItem1": "Offer targeted advertising more relevant to your likes and interests",
+            "OneTapListItem2": "Analyse the way you interact with the game, so we can improve it",
+            "OneTapListItem4": "A regular reminder alerting you that you haven't consented",
+            "OneTapListItem5": "More frequent ads and non-targeted advertising",
+            "OneTapMainBody1": "Before you start playing, we would like to get your consent to collect data from you including your device identifiers, and location data about adverts that are served, viewed or clicked on. This will allow us to provide better quality ads that are more relevant to your interests.",
+            "OneTapMainBody2": "Data is collected on behalf of our partners, as detailed in our <i>Privacy Policy</i> ",
+            "OneTapNotAgreeDesc": "If you don\u2019t consent to share your data you will experience:",
+            "OneTapPolicyToggleDesc": "I have read and accept Kwalee\u2019s privacy policy",
+            "OneTapTitle": "Hunt & Seek",
+            "PrivacyConfirm": "Confirm",
+            "PrivacyTickBox": "I allow Kwalee to utilize my advertisement data.",
+            "SelectAcceptCheck": "By checking the I ACCEPT box above, you consent that you have read and agree to our Privacy Policy and that you are over the age of 16.",
+            "Title": "PERSONALIZE YOUR EXPERIENCE",
+            "TitleAlt": "PRIVACY POLICY & GDPR CONSENT",
+            "TitleNoTracking": "HELP US IMPROVE OUR GAMES"
+        },
+        "GDPROneTap": {
+            "AreYouSureFixSettingsButton": "GO BACK",
+            "AreYouSureStage1ChangeAnyTime": "You can change this setting in the Application at any time.",
+            "AreYouSureStage1Desc": "If you choose to continue without giving consent to share your data (as detailed in our Privacy Policy) you will experience some changes to the game:",
+            "AreYouSureStage1ListItem1": "A regular reminder alerting you that you haven't consented",
+            "AreYouSureStage1ListItem2": "More frequent ads and non-targeted advertising",
+            "AreYouSureStage1Title": "Warning!",
+            "AreYouSureStage2ChangeAnyTime": "You can change this setting in the Application at any time.",
+            "AreYouSureStage2Desc": "You have chosen not to consent to share your data (as detailed in our Privacy Policy). This will change the way you experience the game in the following ways:",
+            "AreYouSureStage2ListItem1": "A regular reminder alerting you that you haven't consented",
+            "AreYouSureStage2ListItem2": "More frequent ads and non-targeted advertising",
+            "AreYouSureStage2Title": "Last Chance!",
+            "AreYouSureUnderstand": "Continue without Consent",
+            "InfoSettingsBackButton": "Back",
+            "InfoSettingsPrivacyPolicy": "<i>Privacy Policy</i>",
+            "InfoSettingsSaveButton": "SAVE",
+            "InfoSettingsTitle": "Data Consent Settings",
+            "InfoSettingsToggle": "I agree to allow my data to be collected by Kwalee and its partners as described in the Privacy Policy",
+            "PrivacySettingsButton": "Data Consent Settings",
+            "SupportButton": "CONTINUE"
+        },
+        "GDPRReminder": {
+            "PrivacyButton": "AD SETTINGS",
+            "Title": "Get less ads by adjusting privacy settings"
+        },
+        "GameOver": {
+            "YouFoundNobody": "\uc544\ubb34\ub3c4 \ubabb \ucc3e\uc558\uc2b5\ub2c8\ub2e4",
+            "YouWereFound": "\ub4e4\ucf30\uc2b5\ub2c8\ub2e4"
+        },
+        "GameScreen": {
+            "BeTheHunter": "\uc220\ub798\uac00 \ub418\uc138\uc694",
+            "FindOtherPlayers": "\ub2e4\ub978 \ud50c\ub808\uc774\uc5b4\ub97c \ucc3e\uc73c\uc138\uc694",
+            "FoundThem": "\uba4b\uc9c0\uac8c \uba85\uc911!",
+            "Hide": "\uc228\uc73c\uc138\uc694!",
+            "Hunt": "\ucc3e\uc73c\uc138\uc694!",
+            "SomeoneNearby": "\uadfc\ucc98\uc5d0 \ub204\uac00 \uc788\uc2b5\ub2c8\ub2e4"
+        },
+        "Generic": {
+            "CollectButton": "\uc218\uc9d1",
+            "DoubleButton": "\ub354\ube14",
+            "GameName": "Hunt & Seek",
+            "TripleButton": "\ud2b8\ub9ac\ud50c"
+        },
+        "HideObject": {
+            "BEANBAG": "Bean Bag",
+            "BEAR": "Teddy Bear",
+            "BIN": "Bin",
+            "CARROT": "Carrot",
+            "CHAIR": "Dining Chair",
+            "CHRISTMASTREE": "Christmas Tree",
+            "COFFEETABLE": "Coffee Table",
+            "DUMPSTER": "Dumpster",
+            "FRIDGE": "Fridge",
+            "JACKHAMMER": "Jackhammer",
+            "LAMP": "Lamp",
+            "MONITOR": "Monitor",
+            "OFFICECHAIR": "Office Chair",
+            "OVEN": "Oven",
+            "PAINT": "Paint",
+            "PEPPER": "Pepper",
+            "PHOTOCOPIER": "Photocopier",
+            "PLANT": "Plant",
+            "PUMPKIN": "Pumpkin",
+            "ROCKINGCHAIR": "Rocking Chair",
+            "SAW": "Saw",
+            "SIDETABLE": "Nightstand",
+            "SINK": "Sink",
+            "TOILET": "Toilet",
+            "TOILETROLL": "Toilet Roll",
+            "TOOLBOX": "Toolbox",
+            "TURKEY": "Turkey",
+            "TV": "TV",
+            "WHEELBARROW": "Wheelbarrow"
+        },
+        "IDFA": {
+            "Accept": "\ud655\uc778",
+            "Description": "\ud655\uc778'\uc744 \ub20c\ub7ec \uc800\ud76c\uac00 \ub354 \uc801\uc808\ud55c \uad11\uace0\ub97c \uc81c\uacf5\ud560 \uc218 \uc788\uac8c \ud574\uc8fc\uc138\uc694.",
+            "DontAllowButton": "\ud5c8\uc6a9 \uc548 \ud568",
+            "NSUserTrackingUsageDescription": "\uadc0\ud558\uc758 \ub370\uc774\ud130\ub97c \ud1b5\ud574 \ub9de\ucda4\ud615 \uad11\uace0\ub97c \uc81c\uacf5\ud560 \uc218 \uc788\uc2b5\ub2c8\ub2e4",
+            "Title": "\uac8c\uc784\uc744 \ubc14\uafd4\ubcf4\uc138\uc694"
+        },
+        "IDFAFullScreen": {
+            "Next": "\ub2e4\uc74c",
+            "PartA": "\uc774 \uc571\uc740 \uad11\uace0\ub97c \uc9c0\uc6d0\ud558\ubbc0\ub85c \ubb34\ub8cc\uc785\ub2c8\ub2e4",
+            "PartB": "\uc548\ub0b4\uac00 \ud45c\uc2dc\ub418\uba74 '\ud5c8\uc6a9'\uc744 \ub20c\ub7ec \uacc4\uc18d \ubb34\ub8cc \uc11c\ube44\uc2a4\ub97c \ud560 \uc218 \uc788\uac8c \ud574\uc8fc\uc138\uc694",
+            "PartC": "\uc790\uc2e0\uc5d0\uac8c \ubcf4\ub2e4 \uc801\ud569\ud55c \uad11\uace0\ub97c \uc2dc\uccad\ud558\uc138\uc694",
+            "PartD": "\uadf8\ub9ac\uace0 \ub2e4\uc591\ud55c \uc0c1\uc744 \uc218\uc0c1\ud55c \uc800\ud76c \uac8c\uc784\uc744 \uacc4\uc18d \ubb34\ub8cc\ub85c \uc990\uae30\uc138\uc694"
+        },
+        "LevelCompleteFlow": {
+            "PlayerSurvived": "\ub77c\uc6b4\ub4dc \uc2b9\ub9ac!"
+        },
+        "LevelName": {
+            "backyard": "\ub4b7\ub730",
+            "castle": "\uc131",
+            "city_park": "\ub3c4\uc2ec \uacf5\uc6d0",
+            "construction": "\uacf5\uc0ac\uc7a5",
+            "convenience_store": "\uac00\uac8c",
+            "farm": "\ub18d\uc7a5",
+            "house": "\uc9d1",
+            "office": "\uc0ac\ubb34\uc2e4",
+            "restaurant": "\uc2dd\ub2f9",
+            "school": "\ud559\uad50"
+        },
+        "LevelNumberDisplay": {
+            "Level": "\ub808\ubca8 {0}"
+        },
+        "LevelResultScreen": {
+            "RoundWon": "\ub77c\uc6b4\ub4dc \uc2b9\ub9ac!",
+            "YouEarned": "\ud68d\ub4dd:"
+        },
+        "LoadingScreen": {
+            "Loading": "\ubd88\ub7ec\uc624\ub294 \uc911"
+        },
+        "OfflineEarnings": {
+            "SubTitle": "\uc790\ub9ac\ub97c \ube44\uc6b4 \ub3d9\uc548 \ud68d\ub4dd\ud55c \uc591:",
+            "Title": "\uadc0\ud658\uc744 \ud658\uc601\ud569\ub2c8\ub2e4"
+        },
+        "Player": {
+            "Name": "\ub098"
+        },
+        "PopUpChestUnlock": {
+            "LoseIt": "\uac70\uc808",
+            "Open": "\uc5f4\uae30"
+        },
+        "PopUpChestUnlocked": {
+            "NewHunter": "\uc0c8\ub85c\uc6b4 \uc220\ub798",
+            "Unlocked": "\uc7a0\uae08 \ud574\uc81c!"
+        },
+        "PopUpForceConnection": {
+            "Okay": "OK",
+            "Title": "\uc778\ud130\ub137 \uc5f0\uacb0\ub418\uc9c0 \uc54a\uc74c"
+        },
+        "PopUpHideFTUE": {
+            "Part1": "A",
+            "Part2": "Nightstand",
+            "Part3": "should hide by...",
+            "Part4": "The Bed!"
+        },
+        "PopUpNewLevelUnlocked": {
+            "NoThanks": "\uac70\uc808",
+            "Title": "\uc0c8\ub85c\uc6b4 \ub808\ubca8 \ud574\uc81c!",
+            "VideoReward": "\ud2b9\ubcc4 \ubb3c\uccb4\ub97c \ud574\uc81c\ud558\uc138\uc694"
+        },
+        "PopUpProgressReward": {
+            "Get": "\uc694\uccad"
+        },
+        "PopUpRvFirstTimeSell": {
+            "Accept": "\uc220\ub798\uac00 \ub418\uc138\uc694",
+            "MissOut": "No thanks"
+        },
+        "PopUpSettings": {
+            "PrivacyPolicy": "\uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\ubc29\uce68",
+            "Title": "\uc124\uc815"
+        },
+        "PopupClearInterstitial": {
+            "Title": "\ud0ed\ud558\uc5ec \uacc4\uc18d\ud558\uae30"
+        },
+        "PopupNoConnection": {
+            "NoAdToShow": "\ud604\uc7ac \uc774\uc6a9 \ubd88\uac00\n \ub098\uc911\uc5d0 \ub2e4\uc2dc \uc2dc\ub3c4\ud558\uc138\uc694.",
+            "NoConnection": "\uc5f0\uacb0 \uc5c6\uc74c",
+            "Okay": "OK"
+        },
+        "ProgressReward": {
+            "Title": "\uc0c8\ub85c\uc6b4 \uc220\ub798!"
+        },
+        "ProjectPush": {
+            "MaxOfflineMessage": "${0}\uc744(\ub97c) \ubc8c\uc5c8\uc73c\ub2c8 \uc5c5\uadf8\ub808\uc774\ub4dc\ub97c \ud574\ubcf4\uc8e0!",
+            "MaxOfflineTitle": "\uce90\uc26c\uac00 \uae30\ub2e4\ub9bd\ub2c8\ub2e4!"
+        },
+        "PushMessage": {
+            "Body1": "\ub3cc\uc544\uc640 \uc228\ubc14\uaf2d\uc9c8 \uc2e4\ub825\uc744 \ubcf4\uc5ec\uc8fc\uc138\uc694",
+            "Body2": "\uc0ac\ubb34\uc2e4\uc5d0 \uc6c0\uc9c1\uc774\ub294 \uac8c \uc5c6\ub294\uc9c0 \ud655\uc778\ud558\uc138\uc694",
+            "Body3": "\ub108\ubb34 \ub2a6\uae30 \uc804\uc5d0 \ubb3c\uccb4\ub97c \uc190\uc5d0 \ub123\uc73c\uc138\uc694!",
+            "Body4": "\uc220\ub798\ub85c\ubd80\ud130 \ubab8\uc744 \uc228\uae38 \uc0c8\ub85c\uc6b4 \uc7a5\uc18c",
+            "Title1": "\ub3fc\uc9c0\uac00 \uc0ac\ub0e5\uc5d0 \ub098\uc130\uc2b5\ub2c8\ub2e4!",
+            "Title2": "\uc774 \ubb3c\uccb4\uac00 \ubc29\uae08 \uc6c0\uc9c1\uc778 \uac74\uac00\uc694?",
+            "Title3": "\uc0c8\ub85c\uc6b4 \ubb3c\uccb4\uac00 \ud574\uc81c\ub418\uc5c8\uc2b5\ub2c8\ub2e4!",
+            "Title4": "\uc9c0\uae08 \uc131\uc744 \ud574\uc81c\ud558\uc138\uc694!"
+        },
+        "RatingWidget": {
+            "Feedback": "\uc758\uacac",
+            "HighNoPrize": "\ubcc4 1~5\uac1c\ub85c \ud3c9\uac00\ud574\uc8fc\uc138\uc694",
+            "HighPrize": "\ubcc4 1~5\uac1c\ub85c \ud3c9\uac00\ud574\uc8fc\uc138\uc694",
+            "Low": "\ubcc4 1~5\uac1c\ub85c \ud3c9\uac00\ud574\uc8fc\uc138\uc694",
+            "PleaseRate": "\ubcc4 1~5\uac1c\ub85c \ud3c9\uac00\ud574\uc8fc\uc138\uc694",
+            "Rate": "\ud3c9\uac00",
+            "Title": "\ud3c9\uac00\ud558\uae30"
+        },
+        "ResultsScreen": {
+            "WinXMoreTimes": "{0}\ud68c \ub354 \uc2b9\ub9ac\ud558\uace0 \ub2e4\uc74c \ub808\ubca8\uc744 \ud574\uc81c\ud558\uc138\uc694!",
+            "WinXMoreTimesSingle": "1\ud68c\ub354 \uc2b9\ub9ac\ud558\uace0 \ub2e4\uc74c \ub808\ubca8\uc744 \ud574\uc81c\ud558\uc138\uc694!"
+        },
+        "RewardChest": {
+            "Found": "\uc0c1\uc790 \ubc1c\uacac"
+        },
+        "Settings": {
+            "RestorePurchases": "\uad6c\ub9e4 \ubcf5\uad6c"
+        },
+        "SettingsScreen": {
+            "EmailBody": "ID: {0}\n\nFeedback :",
+            "EmailRecipient": "support@kwalee.com",
+            "EmailSubject": "\ubcc0\uc2e0 \uc228\ubc14\uaf2d\uc9c8 \ud53c\ub4dc\ubc31"
+        },
+        "ShopItem": {
+            "Back": "Back",
+            "Format": "{0}",
+            "RV": "Free",
+            "StartScreenShop": "Shop",
+            "UnlockAtLevel": "Level"
+        },
+        "StartScreen": {
+            "TapToStart": "\ub20c\ub7ec\uc11c \uc2dc\uc791\ud558\uae30"
+        },
+        "SubscriptionPopup": {
+            "NoAds": "\uad11\uace0 \uc81c\uac70",
+            "PrivacyPolicy": "\uac1c\uc778\uc815\ubcf4 \ubcf4\ud638\uc815\ucc45",
+            "RemoveAds": "\uad11\uace0 \uc81c\uac70",
+            "SmallButtonText": "{0}\uc77c \ubb34\ub8cc \uccb4\ud5d8 \ud6c4 \uc77c\uc8fc\uc77c\uc5d0 {1}",
+            "SmallPrintAndroid": "\uad6c\ub3c5 \uc790\ub3d9 \uac31\uc2e0\uc785\ub2c8\ub2e4. \uad6c\ub3c5\uc740 \uae30\uac04 \uc885\ub8cc 24\uc2dc\uac04 \uc804\uc5d0 \uaebc\uc9c0\uc9c0 \uc54a\ub294 \ud55c \uc790\ub3d9 \uac31\uc2e0\ub418\uba70,\n \uacc4\uc815\uc5d0 \uac31\uc2e0 \uc694\uae08\uc774 \uccad\uad6c\ub429\ub2c8\ub2e4. \uacc4\uc815 \uc124\uc815\uc5d0\uc11c \ub04c \uc218 \uc788\uc2b5\ub2c8\ub2e4. \n\ubb34\ub8cc \uccb4\ud5d8 \uae30\uac04\uc758 \ubbf8\uc0ac\uc6a9 \ubd80\ubd84\uc740 \uc0ac\uc6a9\uc790\uac00 \uad6c\ub3c5\uc744 \uad6c\ub9e4\ud560 \ub54c \uc0ac\ub77c\uc9d1\ub2c8\ub2e4. ",
+            "SmallPrintIOS": "\uad6c\ub3c5 \uc790\ub3d9 \uac31\uc2e0\uc785\ub2c8\ub2e4. \uacb0\uc81c\ub294 \ud655\uc778 \uc2dc iTunes \uacc4\uc815\uc73c\ub85c \uccad\uad6c\ub429\ub2c8\ub2e4. \uad6c\ub3c5\uc740 \uae30\uac04 \uc885\ub8cc 24\uc2dc\uac04 \uc804\uc5d0 \ub044\uc9c0 \uc54a\ub294 \ud55c \uc790\ub3d9 \uac31\uc2e0\ub418\uba70, \n\uacc4\uc815\uc5d0 \uac31\uc2e0 \uc694\uae08\uc774 \uccad\uad6c\ub429\ub2c8\ub2e4. \uacc4\uc815 \uc124\uc815\uc5d0\uc11c \ub04c \uc218 \uc788\uc2b5\ub2c8\ub2e4. \n\ubb34\ub8cc \uccb4\ud5d8 \uae30\uac04\uc758 \ubbf8\uc0ac\uc6a9 \ubd80\ubd84\uc740 \uc0ac\uc6a9\uc790\uac00 \uad6c\ub3c5\uc744 \uad6c\ub9e4\ud560 \ub54c \uc0ac\ub77c\uc9d1\ub2c8\ub2e4. ",
+            "TermsOfUse": "\uc774\uc6a9 \uc57d\uad00",
+            "Title": "VIP",
+            "TryForFree": "\ubb34\ub8cc\ub85c \uccb4\ud5d8",
+            "vipMembership": "VIP \uba64\ubc84\uc2ed"
+        },
+        "Upgrade": {
+            "GenericLevel": "\ub808\ubca8 {0}",
+            "Offline": "\uc624\ud504\ub77c\uc778 \ud68d\ub4dd",
+            "OfflineEarningsBenefitFormat": "${0} / \ubd84",
+            "OfflineEarningsCostFormat": "${0}",
+            "Speed": "\uc18d\ub3c4",
+            "SpeedBenefitFormat": "{0}",
+            "SpeedCostFormat": "${0}",
+            "Time": "\uc2dc\uac04",
+            "TimeBenefitFormat": "{0} ",
+            "TimeCostFormat": "${0}"
+        },
+        "UpgradeButtons": {
+            "Max": "\ucd5c\ub300",
+            "Upgrade": "\uc5c5\uadf8\ub808\uc774\ub4dc"
+        }
+    },
+    "version": 0
+}
