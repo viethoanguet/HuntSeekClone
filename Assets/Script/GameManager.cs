@@ -23,7 +23,18 @@ public class GameManager : MonoBehaviour
     {
         countAI = ListAI.Count;
     }
-
+    private void Update()
+    {
+        if(player.checkBoss)
+        {
+            UIManager.ins.checkTime = true;
+        }
+        else
+        {
+            UIManager.ins.checkTime = false;
+           
+        }
+    }
     public void ActiveBossAI()
     {
         if (!player.checkBoss)
@@ -41,4 +52,5 @@ public class GameManager : MonoBehaviour
         player.isDead = true;
         UIManager.ins.GameLose();
     }
+  
 }

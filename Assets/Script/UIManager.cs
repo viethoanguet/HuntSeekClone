@@ -7,8 +7,8 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
     public static UIManager ins;
-    [SerializeField] private bool checkTime;
-    [SerializeField] private bool checkBanner;
+    public bool checkTime;
+    public bool checkBanner;
     [SerializeField] private FloatingJoystick joystick;
     [SerializeField] private GameObject time;
     public float timeCountdown;
@@ -29,11 +29,12 @@ public class UIManager : MonoBehaviour
     {
         gameWin.gameObject.SetActive(false);
         gameLose.gameObject.SetActive(false);
-        checkTime = false;
-        checkBanner = false;
+        checkTime = true;
+        checkBanner = true;
         hideCanvans.gameObject.SetActive(false);
         time.gameObject.SetActive(false);
         joystick.gameObject.SetActive(false);
+
         StartCoroutine(StopRotation());
     }
 
@@ -42,22 +43,32 @@ public class UIManager : MonoBehaviour
         yield return new WaitForSeconds(4f);
         {
             joystick.gameObject.SetActive(true);
-            time.gameObject.SetActive(true);
-            checkBanner = true;
+            //checkBanner = true;
+            if (!checkTime)
+            {
+                checkBanner = false;
+                time.gameObject.SetActive(true);
+
+            }
+
         }
     }
     private void Update()
     {
         if (!checkTime)
+        {
             timeCountdown -= Time.deltaTime;
-        textTime.text = "Time : " + Mathf.Round(timeCountdown).ToString();
+            textTime.text = "Time : " + Mathf.Round(timeCountdown).ToString();
+        }
+           
         if (timeCountdown < 0f && !checkTime)
         {
-            checkBanner = false;
+            checkBanner = true;
             timeCountdown = 0f;
-            ActiveHideCanvas();
+            // ActiveHideCanvas();
+            ButtonHide();
         }
-        if(checkBanner)
+        if(!checkBanner)
         {
             if (!joystick.check)
             {
@@ -81,7 +92,7 @@ public class UIManager : MonoBehaviour
     {
         hideCanvans.gameObject.SetActive(false);
         checkTime = true;
-        checkBanner = false;
+        checkBanner = true;
         gameManager.ActiveBossAI();
         time.gameObject.SetActive(false);
         CameraController.instance.setCam1();
