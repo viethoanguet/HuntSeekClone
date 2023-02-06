@@ -11,14 +11,13 @@ public class ArrowScript : MonoBehaviour
         box = GetComponent<BoxCollider>();
         checkArrow = true;
         RandomRotation();
-        //StartCoroutine(WaitStartGame());
     }
     private void RandomRotation()
     {
         if (checkArrow)
         {
             gameObject.transform.DORotate(
-                new Vector3(0f, 0f,0f), 2f, RotateMode.FastBeyond360)
+                new Vector3(0f, 1200 + Random.Range(0, 270f), 0), 2f, RotateMode.FastBeyond360)
                 //1200+Random.Range(0,180f)
                 // .SetLoops(-1, LoopType.Restart)
                 .SetEase(Ease.Linear)
@@ -31,13 +30,6 @@ public class ArrowScript : MonoBehaviour
         yield return new WaitForSeconds(2.5f);
         {
             gameObject.SetActive(false);
-        }
-    }
-    IEnumerator WaitStartGame()
-    {
-        yield return new WaitForSeconds(1f);
-        {
-            RandomRotation();
         }
     }
     private void ActiveBox()

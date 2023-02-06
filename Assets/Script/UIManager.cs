@@ -17,6 +17,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameManager gameManager;
     [SerializeField] private GameObject gameWin;
     [SerializeField] private GameObject gameLose;
+    [SerializeField] private GameObject BannerDelay321;
     private void Awake()
     {
         if (ins == null)
@@ -34,15 +35,29 @@ public class UIManager : MonoBehaviour
         hideCanvans.gameObject.SetActive(false);
         time.gameObject.SetActive(false);
         joystick.gameObject.SetActive(false);
-
+        BannerDelay321.gameObject.SetActive(false);
         StartCoroutine(StopRotation());
     }
+    public void ActiveBannerDelay321()
+    {
 
+        StartCoroutine(WaitDisplayBanner321());
+    }
+    IEnumerator WaitDisplayBanner321()
+    {
+        yield return new WaitForSeconds(1);
+        {
+            BannerDelay321.gameObject.SetActive(true);
+            BannerDelay321.GetComponent<BannerDelay321>().aaaa();
+        }
+        
+    }
     IEnumerator StopRotation()
     {
         yield return new WaitForSeconds(4f);
         {
             joystick.gameObject.SetActive(true);
+           
             //checkBanner = true;
             if (!checkTime)
             {
@@ -81,13 +96,7 @@ public class UIManager : MonoBehaviour
         }    
         
     }
-    private void ActiveHideCanvas()
-    {
-        hideCanvans.gameObject.SetActive(true);
-        time.gameObject.SetActive(false);
-        // gameManager.ActiveBossAI();
-        CameraController.instance.setCam1();
-    }
+
     public void ButtonHide()
     {
         hideCanvans.gameObject.SetActive(false);

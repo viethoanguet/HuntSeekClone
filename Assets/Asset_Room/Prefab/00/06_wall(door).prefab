@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1290481970758120}
   m_LocalRotation: {x: 0.000000059604645, y: -5.2108035e-15, z: -0.00000008742278, w: 1}
-  m_LocalPosition: {x: -0.32080612, y: 0.6265775, z: 0.014123535}
+  m_LocalPosition: {x: -0.3, y: 0.63, z: 0.014123535}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -109,7 +109,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1402380830388668}
   m_LocalRotation: {x: 0.000000059604645, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.000000076293944, y: 0.00000061035155, z: 0.00000008106232}
+  m_LocalPosition: {x: -0.000000076293944, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -176,6 +176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4579944617657562}
   - component: {fileID: 95233939933781920}
+  - component: {fileID: 6162592314129050678}
   m_Layer: 0
   m_Name: 06_wall(door)
   m_TagString: Untagged
@@ -220,3 +221,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!65 &6162592314129050678
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527864453041406}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.827732, y: 2.5445185, z: 0.14629126}
+  m_Center: {x: 0.016752183, y: 1.2841907, z: -0.053796053}

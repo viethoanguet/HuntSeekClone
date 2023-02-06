@@ -9,17 +9,20 @@ public class AIPlayer : MonoBehaviour
     private Vector3 posRandom;
     public Transform archor;
     public bool isDealAI;
+    
+    
     void Start()
     {
         isDealAI = false;
         checkAIBoss = false;
         check = false;
-        StartCoroutine(WaitMove());
+       // StartCoroutine(WaitMove());
     }
 
     public void MoveRandom()
     {
-        posRandom = new Vector3(archor.position.x + Random.Range(-5, 5), 0, archor.position.z + Random.Range(-4, 5));
+        posRandom = AIandPosController.instance.randomPos();
+       // posRandom = new Vector3(archor.position.x + Random.Range(-3, 3), 0, archor.position.z + Random.Range(-3, 3));
         gameObject.transform.forward = Direction(posRandom);
         if (!check)
         {
@@ -44,7 +47,7 @@ public class AIPlayer : MonoBehaviour
     private IEnumerator WaitMove()
     {
         yield return new WaitForSeconds(3f);
-        MoveRandom();
+         MoveRandom();
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -65,7 +68,12 @@ public class AIPlayer : MonoBehaviour
         }
         if(collision.gameObject.CompareTag("Player"))
         {
-            StartCoroutine(WaitTimeCheckCollision());
+           //  StartCoroutine(WaitTimeCheckCollision());
+           if(UIManager.ins.checkTime)
+            {
+                StartCoroutine(WaitTimeCheckCollision());
+            }    
+           
         }
     }
     private IEnumerator WaitActiveFalse()
@@ -73,9 +81,10 @@ public class AIPlayer : MonoBehaviour
         yield return new WaitForSeconds(1f);
         gameObject.SetActive(false);
     }
+
     private IEnumerator WaitTimeCheckCollision()
     {
-        yield return new WaitForSeconds(UIManager.ins.timeCountdown);
+        yield return new WaitForSeconds(1f);
         {
             gameObject.SetActive(false);
             GameManager.instance.countAI--;

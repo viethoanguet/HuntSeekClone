@@ -4,7 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 public class PlayerController : MonoBehaviour
 {
-
+    public PlayerAnimator anim;
     public bool checkBoss;
     public bool isDead;
   
@@ -18,16 +18,21 @@ public class PlayerController : MonoBehaviour
     {
         if(other.CompareTag("Arrow"))
         {
-            gameObject.transform.DOScale(new Vector3(1, 1, 1), 1f);
+            gameObject.transform.DOScale(new Vector3(0.8f, 0.8f, 0.8f), 1f);
             checkBoss = true;
+            UIManager.ins.ActiveBannerDelay321();
         }    
     }
+
     private void OnCollisionEnter(Collision collision)
     {
-       /* if(collision.gameObject.CompareTag("AIPlayer"))
+        if (collision.gameObject.CompareTag("AIPlayer"))
         {
-            GameManager.instance.countAI--;
-            
-        }*/
+
+               anim.SetAnimAttack();
+  
+
+        }
+
     }
 }

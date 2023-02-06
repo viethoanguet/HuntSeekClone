@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using DG.Tweening;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<AIPlayer> ListAI = new List<AIPlayer>();
     [SerializeField] private ArrowScript arrow;
     [SerializeField] private BossAIController bossAI;
+
     public float timePlay;
     public float countAI;
     private void Awake()
@@ -28,6 +29,7 @@ public class GameManager : MonoBehaviour
         if(player.checkBoss)
         {
             UIManager.ins.checkTime = true;
+           
         }
         else
         {
@@ -52,5 +54,5 @@ public class GameManager : MonoBehaviour
         player.isDead = true;
         UIManager.ins.GameLose();
     }
-  
+ 
 }

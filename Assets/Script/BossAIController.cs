@@ -6,8 +6,10 @@ public class BossAIController : MonoBehaviour
 {
     public bool check;
     private Vector3 posRandom;
+    private int posN;
     public Transform archor;
     public BossAIAnimator animBoss;
+    [SerializeField] private List<Transform> posAI;
     private void Start()
     {
         check = false;
@@ -15,18 +17,19 @@ public class BossAIController : MonoBehaviour
     }
     public void MoveRandom()
     {
+        posN = Random.Range(0, posAI.Count);
+        posRandom = posAI[posN].position;
+        //  posRandom = new Vector3(archor.position.x + Random.Range(-3, 3), 0, archor.position.z + Random.Range(-3, 3));
 
-        posRandom = new Vector3(archor.position.x + Random.Range(-5, 5), 0, archor.position.z + Random.Range(-5, 5));
-        
         gameObject.transform.forward = Direction(posRandom);
         
         if (!check)
         {
             transform.DOMove(posRandom, SetTime(posRandom)).SetEase(Ease.Linear).OnComplete(() =>
             {
-                animBoss.SetAnimDamage();
+                //animBoss.SetAnimDamage();
 
-                //MoveRandom();
+              //  MoveRandom();
 
                   StartCoroutine(WaitAttack());
             });
@@ -46,8 +49,9 @@ public class BossAIController : MonoBehaviour
     }
     IEnumerator WaitAttack()
     {
-       
-        yield return new WaitForSeconds(1.5f);
+        animBoss.SetAnimDamage();
+        posAI.RemoveAt(posN);
+        yield return new WaitForSeconds(2f);
         {
             //animBoss.SetAnimRun();
             MoveRandom();
@@ -60,7 +64,16 @@ public class BossAIController : MonoBehaviour
         {
             GameManager.instance.OnLose();
         }    
-       
+        if(collision.gameObject.CompareTag("Item"))
+        {
+             animBoss.SetAnimDamage();
+           // StartCoroutine(WaitAttack());
+        }
+        if (collision.gameObject.CompareTag("AIPlayer"))
+        {
+            //animBoss.SetAnimDamage();
+           // StartCoroutine(WaitAttack());
+        }
     }
 
 }
