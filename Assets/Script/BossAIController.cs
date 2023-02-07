@@ -10,10 +10,12 @@ public class BossAIController : MonoBehaviour
     public Transform archor;
     public BossAIAnimator animBoss;
     [SerializeField] private List<Transform> posAI;
+    public GameObject effectboss;
     private void Start()
     {
         check = false;
         MoveRandom();
+        effectboss.gameObject.SetActive(false);
     }
     public void MoveRandom()
     {
@@ -75,5 +77,8 @@ public class BossAIController : MonoBehaviour
            // StartCoroutine(WaitAttack());
         }
     }
-
+    public void ActiveEffectBoss()
+    {
+        effectboss.gameObject.SetActive(true);
+    }    
 }

@@ -9,8 +9,8 @@ public class AIPlayer : MonoBehaviour
     private Vector3 posRandom;
     public Transform archor;
     public bool isDealAI;
-    
-    
+
+    public ChangeMesh changMesh;
     void Start()
     {
         isDealAI = false;
@@ -54,6 +54,7 @@ public class AIPlayer : MonoBehaviour
         if (other.CompareTag("Arrow"))
         {
             checkAIBoss = true;
+           // EffectManager.Instance.SpawnWhiteEffect(transform.position, null);
             gameObject.transform.DOScale(new Vector3(1, 1, 1), 1f);
             GameManager.instance.countAI--;
             StartCoroutine(WaitActiveFalse());
@@ -84,11 +85,18 @@ public class AIPlayer : MonoBehaviour
 
     private IEnumerator WaitTimeCheckCollision()
     {
+        
         yield return new WaitForSeconds(1f);
         {
-            gameObject.SetActive(false);
-            GameManager.instance.countAI--;
-            GameManager.instance.OnWin();
+            changMesh.ActiveEffectAI();
+            changMesh.ResetModel();
+            yield return new WaitForSeconds(0.5f);
+            {
+                gameObject.SetActive(false);
+                GameManager.instance.countAI--;
+                GameManager.instance.OnWin();
+            }
+
         }
 
     }

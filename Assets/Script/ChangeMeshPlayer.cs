@@ -18,8 +18,10 @@ public class ChangeMeshPlayer : MonoBehaviour
     {
         if(!player.checkBoss)
         {
+
             modelFilter.mesh = modelChange[current];
             modelMesh.gameObject.SetActive(false);
+
         }    
 
     }
@@ -27,7 +29,12 @@ public class ChangeMeshPlayer : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
         {
-            ChangeMeshModel();
+            player.ActiveEffect();
+            yield return new WaitForSeconds(0.2f);
+            {
+                ChangeMeshModel();
+            }
+           
         }
     }
 }

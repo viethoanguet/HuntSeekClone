@@ -5,6 +5,7 @@ using UnityEngine;
 public class BossAIAnimator : MonoBehaviour
 {
     public Animator anim;
+
     private void Start()
     {
         anim = gameObject.GetComponent<Animator>();

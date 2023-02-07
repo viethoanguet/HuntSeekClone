@@ -102,6 +102,7 @@ public class UIManager : MonoBehaviour
         hideCanvans.gameObject.SetActive(false);
         checkTime = true;
         checkBanner = true;
+
         gameManager.ActiveBossAI();
         time.gameObject.SetActive(false);
         CameraController.instance.setCam1();

@@ -40,7 +40,23 @@ public class GameManager : MonoBehaviour
     public void ActiveBossAI()
     {
         if (!player.checkBoss)
+        {
+
+            StartCoroutine(DelayActiveBoss());
+        }    
+
+    }
+    IEnumerator DelayActiveBoss()
+    {
+        yield return new WaitForSeconds(1.5f);
+        {
             bossAI.gameObject.SetActive(true);
+            yield return new WaitForSeconds(0.1f);
+            {
+                bossAI.ActiveEffectBoss();
+            }
+
+        }
     }
     public void OnWin()
     {
