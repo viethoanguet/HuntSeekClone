@@ -62,7 +62,10 @@ public class GameManager : MonoBehaviour
     {
         if (countAI == 0 && !player.isDead)
         {
+            Debug.Log(DataManager.instance.userData);
+           // DataManager.instance.AddCoin(20);
             UIManager.ins.GameWin();
+
         }
     }
     public void OnLose()

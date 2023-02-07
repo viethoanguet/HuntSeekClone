@@ -1140,9 +1140,10 @@ GameObject:
   - component: {fileID: 5715176189458116477}
   - component: {fileID: 5715176189458116478}
   - component: {fileID: 5715176189458116464}
+  - component: {fileID: 1808838892}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1194,12 +1195,12 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4868685485548634660}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 1
+  m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!136 &5715176189458116476
@@ -1228,10 +1229,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db1c0bbaea9a4844690a348d7ba529eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 0}
+  anim: {fileID: 5715176189458116464}
   checkBoss: 0
   isDead: 0
-  effect: {fileID: 0}
+  effect: {fileID: 19868347577409981}
 --- !u!114 &5715176189458116478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1246,10 +1247,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 5715176189458116479}
   joystick: {fileID: 0}
-  moveSpeed: 4
+  moveSpeed: 2
   anim: {fileID: 5715176189458116464}
-  player: {fileID: 0}
-  toRotationSpeed: 0
+  player: {fileID: 5249749159225481374}
+  toRotationSpeed: 120
 --- !u!114 &5715176189458116464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1263,6 +1264,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 2178325908127449828}
+--- !u!114 &1808838892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4868685485548634660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b48bf6614ae40734bb2d9c3773476951, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelFilter: {fileID: 8800687598616988194}
+  modelMesh: {fileID: 5120444994526968074}
+  modelChange:
+  - {fileID: 4300000, guid: e674dc0deae3d9141a994f7c75e7cfc2, type: 3}
+  - {fileID: 4300000, guid: 480925f4da0075948a2122a8d6d8b39b, type: 3}
+  - {fileID: 4300000, guid: e67a17248737a244399f7f94e1d2cd42, type: 3}
+  - {fileID: 4300000, guid: 2aaf919139a880443b2e9642f09859ad, type: 3}
+  - {fileID: 4300000, guid: 1408b9b7685cbba40a765042fa081e6d, type: 3}
+  current: 0
+  player: {fileID: 5715176189458116477}
 --- !u!1 &5399639848296159061
 GameObject:
   m_ObjectHideFlags: 0
@@ -2496,8 +2519,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 19817582, guid: a683a64447fd79345b0221c5c28b2c48, type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a683a64447fd79345b0221c5c28b2c48, type: 3}
+--- !u!1 &19868347577409981 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 173590, guid: a683a64447fd79345b0221c5c28b2c48, type: 3}
+  m_PrefabInstance: {fileID: 19868347577567147}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &19868347577695925 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 456990, guid: a683a64447fd79345b0221c5c28b2c48, type: 3}
