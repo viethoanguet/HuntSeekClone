@@ -41,5 +41,9 @@ public class PlayerController : MonoBehaviour
     public void ActiveEffect()
     {
         effect.gameObject.SetActive(true);
-    }    
+    }
+    private void OnDisable()
+    {
+        transform.DOKill();
+    }
 }

@@ -1246,7 +1246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 5715176189458116479}
-  joystick: {fileID: 0}
+  joystick: {fileID: 8703034294730050565, guid: 384142f193748a94f9de74934d4a4091, type: 3}
   moveSpeed: 2
   anim: {fileID: 5715176189458116464}
   player: {fileID: 5249749159225481374}

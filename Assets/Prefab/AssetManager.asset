@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerCharacters:
   - {fileID: 5715176189458116477, guid: e0097d9fcf7154649a82c6e1446aa164, type: 3}
+  gameManagers:
+  - {fileID: 137302562113953694, guid: 6bcd9f34c6d0c244680e53ebe140964b, type: 3}
+  - {fileID: 137302562113953694, guid: c66acdeb8266fc74898930cfe049eb54, type: 3}

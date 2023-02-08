@@ -11,6 +11,7 @@ public class AIPlayer : MonoBehaviour
     public bool isDealAI;
 
     public ChangeMesh changMesh;
+    public AIManager aiMng;
     void Start()
     {
         isDealAI = false;
@@ -21,7 +22,8 @@ public class AIPlayer : MonoBehaviour
 
     public void MoveRandom()
     {
-        posRandom = AIandPosController.instance.randomPos();
+
+        posRandom = aiMng.aIandPosController.randomPos();
        // posRandom = new Vector3(archor.position.x + Random.Range(-3, 3), 0, archor.position.z + Random.Range(-3, 3));
         gameObject.transform.forward = Direction(posRandom);
         if (!check)
@@ -91,13 +93,18 @@ public class AIPlayer : MonoBehaviour
             changMesh.ActiveEffectAI();
             changMesh.ResetModel();
             yield return new WaitForSeconds(0.5f);
-            {
+            {            
                 gameObject.SetActive(false);
+                gameObject.transform.DOKill();
                 GameManager.instance.countAI--;
                 GameManager.instance.OnWin();
             }
 
         }
 
+    }
+    private void OnDisable()
+    {
+        StopAllCoroutines();
     }
 }

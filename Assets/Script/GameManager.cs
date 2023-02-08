@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<AIPlayer> ListAI = new List<AIPlayer>();
     [SerializeField] private ArrowScript arrow;
     [SerializeField] private BossAIController bossAI;
-
+    public CameraController cameraController;
     public float timePlay;
     public float countAI;
     private void Awake()
@@ -22,29 +22,39 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
-        countAI = ListAI.Count;
+       
     }
-    private void Update()
+    private void OnEnable()
     {
+        Init();
+    }
+    public void Init()
+    {
+        countAI = ListAI.Count;
+        arrowRotation();
+    }
+    public void arrowRotation()
+    {
+        arrow.gameObject.SetActive(true);
+    }    
+    private void Update()
+    {  
         if(player.checkBoss)
         {
-            UIManager.ins.checkTime = true;
-           
+            UIManager.ins.checkTime = true;   
         }
         else
         {
             UIManager.ins.checkTime = false;
-           
         }
     }
     public void ActiveBossAI()
     {
         if (!player.checkBoss)
         {
-
+            if(gameObject.activeInHierarchy)
             StartCoroutine(DelayActiveBoss());
-        }    
-
+        }
     }
     IEnumerator DelayActiveBoss()
     {
@@ -55,17 +65,15 @@ public class GameManager : MonoBehaviour
             {
                 bossAI.ActiveEffectBoss();
             }
-
         }
     }
     public void OnWin()
     {
         if (countAI == 0 && !player.isDead)
         {
-            Debug.Log(DataManager.instance.userData);
+            bossAI.gameObject.SetActive(false);
            // DataManager.instance.AddCoin(20);
             UIManager.ins.GameWin();
-
         }
     }
     public void OnLose()
@@ -73,5 +81,8 @@ public class GameManager : MonoBehaviour
         player.isDead = true;
         UIManager.ins.GameLose();
     }
- 
+    private void OnDisable()
+    {
+        StopAllCoroutines();
+    }
 }

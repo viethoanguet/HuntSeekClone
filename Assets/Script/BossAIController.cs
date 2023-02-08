@@ -14,25 +14,21 @@ public class BossAIController : MonoBehaviour
     private void Start()
     {
         check = false;
-        MoveRandom();
+        //MoveRandom();
         effectboss.gameObject.SetActive(false);
     }
     public void MoveRandom()
     {
         posN = Random.Range(0, posAI.Count);
         posRandom = posAI[posN].position;
-        //  posRandom = new Vector3(archor.position.x + Random.Range(-3, 3), 0, archor.position.z + Random.Range(-3, 3));
-
         gameObject.transform.forward = Direction(posRandom);
-        
+        transform.DOKill();
         if (!check)
         {
             transform.DOMove(posRandom, SetTime(posRandom)).SetEase(Ease.Linear).OnComplete(() =>
             {
                 //animBoss.SetAnimDamage();
-
               //  MoveRandom();
-
                   StartCoroutine(WaitAttack());
             });
         }
@@ -57,7 +53,6 @@ public class BossAIController : MonoBehaviour
         {
             //animBoss.SetAnimRun();
             MoveRandom();
-            
         }
     }
     private void OnCollisionEnter(Collision collision)
@@ -65,6 +60,7 @@ public class BossAIController : MonoBehaviour
         if(collision.gameObject.CompareTag("Player") )
         {
             GameManager.instance.OnLose();
+            transform.DOKill();
         }    
         if(collision.gameObject.CompareTag("Item"))
         {
@@ -80,5 +76,10 @@ public class BossAIController : MonoBehaviour
     public void ActiveEffectBoss()
     {
         effectboss.gameObject.SetActive(true);
-    }    
+        MoveRandom();
+    }
+    private void OnDisable()
+    {
+        StopAllCoroutines();
+    }
 }

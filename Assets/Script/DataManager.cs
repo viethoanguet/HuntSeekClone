@@ -18,14 +18,10 @@ public class DataManager :MonoBehaviour
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
+        LoadUserData();
     }
     public UserData userData { get; set; }
-    public  void OnAwake()
-    {
-        LoadUserData();
-       // LoadLevelData();
-    }
-
+    public LevelData levelData { get; set; }
     private void LoadUserData()
     {
         string json = PlayerPrefs.GetString("USERDATA");
@@ -36,18 +32,43 @@ public class DataManager :MonoBehaviour
         else
         {
             userData = new UserData();
-            if (userData.unlockedCharacterIDs.Count == 0)
-            {
-                userData.currentCharacterID = 0;
-                userData.unlockedCharacterIDs.Add(0);
+           // if (userData.unlockedCharacterIDs.Count == 0)
+          //  {
+               // userData.currentCharacterID = 0;
+                //userData.unlockedCharacterIDs.Add(0);
                 SaveUserData();
-            }
+         //   }
         }
     }
     public void SaveUserData()
     {
         string json = JsonUtility.ToJson(userData);
         PlayerPrefs.SetString("USERDATA", json);
+    }
+    public void LoadLevelData()
+    {
+        string levelcurrent = PlayerPrefs.GetString("LEVEL");
+        if (!string.IsNullOrEmpty(levelcurrent))
+        {
+            levelData = JsonUtility.FromJson<LevelData>(levelcurrent);
+        }
+        else
+        {
+            levelData = new LevelData();
+            SaveLevelData();
+        }
+        //Instantiate(assetManager.gameManagers[userData.level]);
+    }
+    public void SaveLevelData()
+    {
+        string levelcurrent = JsonUtility.ToJson(levelData);
+        PlayerPrefs.SetString("LEVEL", levelcurrent);
+    }
+    public void UpLevel()
+    {
+        userData.level = Mathf.Min(userData.level + 1, assetManager.gameManagers.Count - 1);
+        SaveUserData();
+        LoadLevelData();
     }
     public void AddCoin(int coin)
     {
@@ -73,11 +94,13 @@ public class DataManager :MonoBehaviour
     {
         public int coin = 20;
         public int level = 0;
-        public bool removeAds = false;
-        public string userName = "UnknowUser";
-        public int currentCharacterID = 0;
-        public List<int> unlockedCharacterIDs = new List<int>();
+       // public string userName = "UnknowUser";
+        //public int currentCharacterID = 0;
+      //  public List<int> unlockedCharacterIDs = new List<int>();
+    }
+    public class LevelData
+    {
+        public int level = 0;
     }
 
-   
 }

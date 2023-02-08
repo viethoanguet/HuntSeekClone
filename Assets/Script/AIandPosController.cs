@@ -14,10 +14,17 @@ public class AIandPosController : MonoBehaviour
         {
             instance = this;
         }
-
     }
 
     private void Start()
+    {
+       // InitPosAI();
+    }
+    private void OnEnable()
+    {
+        InitPosAI();
+    }
+    public void InitPosAI()
     {
         StartCoroutine(WaitMove());
     }
@@ -40,6 +47,12 @@ public class AIandPosController : MonoBehaviour
          n = Random.Range(0, posAI.Count);
         return posAI[n].position;
     }    
-
-
+    public void ActiveAIandPosController()
+    {
+        gameObject.SetActive(false);
+    }
+    private void OnDisable()
+    {
+        StopAllCoroutines();
+    }
 }

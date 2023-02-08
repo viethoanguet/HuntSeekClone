@@ -28,5 +28,8 @@ public class BannerDelay321 : MonoBehaviour
         gameObject.SetActive(false);
 
     }
-
+    private void OnDisable()
+    {
+        StopAllCoroutines();
+    }
 }
