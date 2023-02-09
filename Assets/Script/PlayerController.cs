@@ -23,7 +23,9 @@ public class PlayerController : MonoBehaviour
             effect.transform.DOScale(new Vector3(2, 2, 2), 0.1f);
             gameObject.transform.DOScale(new Vector3(0.8f, 0.8f, 0.8f), 1f);
             checkBoss = true;
+            UIManager.ins.SetChecktime();
             UIManager.ins.ActiveBannerDelay321();
+
         }    
     }
 
@@ -31,10 +33,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("AIPlayer"))
         {
-
                anim.SetAnimAttack();
-  
-
         }
 
     }

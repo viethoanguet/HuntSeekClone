@@ -22,11 +22,14 @@ public class BannerDelay321 : MonoBehaviour
             yield return new WaitForSeconds(1f);
             {
                 list321[i].gameObject.SetActive(true);
+                yield return new WaitForSeconds(1f);
+                {
+                    list321[i].gameObject.SetActive(false);
+                }
             }
         }
         yield return new WaitForSeconds(1f);
         gameObject.SetActive(false);
-
     }
     private void OnDisable()
     {

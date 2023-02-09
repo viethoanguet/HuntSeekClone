@@ -9,6 +9,8 @@ public class ChangeMeshPlayer : MonoBehaviour
     [SerializeField] private Mesh[] modelChange;
     [SerializeField] private int current;
     [SerializeField] private PlayerController player;
+    //public GameObject skin;
+   // public GameObject skinNormal;
     private void Start()
     {
         current = Random.Range(1, modelChange.Length);
@@ -18,7 +20,6 @@ public class ChangeMeshPlayer : MonoBehaviour
     {
         if(!player.checkBoss)
         {
-
             modelFilter.mesh = modelChange[current];
             modelMesh.gameObject.SetActive(false);
 
@@ -36,5 +37,9 @@ public class ChangeMeshPlayer : MonoBehaviour
             }
            
         }
+    }
+    private void OnDisable()
+    {
+        StopAllCoroutines();
     }
 }

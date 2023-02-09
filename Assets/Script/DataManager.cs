@@ -57,7 +57,6 @@ public class DataManager :MonoBehaviour
             levelData = new LevelData();
             SaveLevelData();
         }
-        //Instantiate(assetManager.gameManagers[userData.level]);
     }
     public void SaveLevelData()
     {

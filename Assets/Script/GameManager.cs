@@ -4,6 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 public class GameManager : MonoBehaviour
 {
+    public bool checkBosslevel;
     public static GameManager instance;
     public bool startGame;
     [SerializeField] private PlayerController player;
@@ -30,6 +31,7 @@ public class GameManager : MonoBehaviour
     }
     public void Init()
     {
+        checkBosslevel = false;
         countAI = ListAI.Count;
         arrowRotation();
     }
@@ -38,15 +40,15 @@ public class GameManager : MonoBehaviour
         arrow.gameObject.SetActive(true);
     }    
     private void Update()
-    {  
-        if(player.checkBoss)
+    {
+        if (player.checkBoss)
         {
-            UIManager.ins.checkTime = true;   
+            checkBosslevel = true;
         }
-        else
-        {
-            UIManager.ins.checkTime = false;
-        }
+         else
+         {
+            checkBosslevel = false;
+       }
     }
     public void ActiveBossAI()
     {

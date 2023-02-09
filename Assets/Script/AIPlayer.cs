@@ -9,17 +9,20 @@ public class AIPlayer : MonoBehaviour
     private Vector3 posRandom;
     public Transform archor;
     public bool isDealAI;
-
+    public GameManager gameManager;
     public ChangeMesh changMesh;
     public AIManager aiMng;
     void Start()
     {
+      
+       // StartCoroutine(WaitMove());
+    }
+    private void OnEnable()
+    {
         isDealAI = false;
         checkAIBoss = false;
         check = false;
-       // StartCoroutine(WaitMove());
     }
-
     public void MoveRandom()
     {
 
@@ -58,7 +61,8 @@ public class AIPlayer : MonoBehaviour
             checkAIBoss = true;
            // EffectManager.Instance.SpawnWhiteEffect(transform.position, null);
             gameObject.transform.DOScale(new Vector3(1, 1, 1), 1f);
-            GameManager.instance.countAI--;
+           // UIManager.ins.checkTime = false;
+            gameManager.countAI--;
             StartCoroutine(WaitActiveFalse());
 
         }
@@ -96,8 +100,8 @@ public class AIPlayer : MonoBehaviour
             {            
                 gameObject.SetActive(false);
                 gameObject.transform.DOKill();
-                GameManager.instance.countAI--;
-                GameManager.instance.OnWin();
+                gameManager.countAI--;
+                gameManager.OnWin();
             }
 
         }

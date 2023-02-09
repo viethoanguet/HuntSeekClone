@@ -8,7 +8,7 @@ public class BossAIAnimator : MonoBehaviour
 
     private void Start()
     {
-        anim = gameObject.GetComponent<Animator>();
+       
     }
 
     public void SetAnimAttack(bool attack)

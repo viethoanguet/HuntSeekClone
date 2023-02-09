@@ -5712,6 +5712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f0d34a1b1fcef45a5e56839e0b95e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkBosslevel: 0
   level: []
   gameManager: {fileID: 0}
 --- !u!1001 &1322586209
@@ -6148,6 +6149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f195d29766bea1648a9ab25e576c6c6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkBosslevel: 0
   startGame: 0
   player: {fileID: 0}
   ListAI:
@@ -10568,7 +10570,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 748709326}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: Restart
+        m_MethodName: NextLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

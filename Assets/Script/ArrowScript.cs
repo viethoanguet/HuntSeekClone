@@ -21,7 +21,7 @@ public class ArrowScript : MonoBehaviour
         // if (checkArrow)
         // {
         gameObject.transform.DORotate(
-                new Vector3(0f, 1200 + Random.Range(0, 180f), 0), 2f, RotateMode.FastBeyond360)
+                new Vector3(0f, 1400 + Random.Range(0, 360f), 0), 2.5f, RotateMode.FastBeyond360)
                 //1200+Random.Range(0,180f)
                 // .SetLoops(-1, LoopType.Restart)
                 .SetEase(Ease.Linear)

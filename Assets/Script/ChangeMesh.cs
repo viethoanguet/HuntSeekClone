@@ -9,11 +9,15 @@ public class ChangeMesh : MonoBehaviour
     [SerializeField] private Mesh[] modelChange;
     [SerializeField] private int current;
     public GameObject effect;
+    public GameObject skin;
+    public GameObject skinNormal;
     private void Start()
     {
         modelOLd = modelFilter.mesh;
         effect.gameObject.SetActive(false);
         StartCoroutine(Changemesh());
+        skin.gameObject.SetActive(true);
+        skinNormal.gameObject.SetActive(false);
     }
     public void ChangeMeshModel()
     {
@@ -26,12 +30,16 @@ public class ChangeMesh : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
         {
+            skin.gameObject.SetActive(false);
             effect.gameObject.SetActive(true);
+            skinNormal.gameObject.SetActive(true);
+
             yield return new WaitForSeconds(0.2f);
             {
                 ChangeMeshModel();
                 yield return new WaitForSeconds(1f);
                 {
+
                     effect.gameObject.SetActive(false);
                 }
 
@@ -41,11 +49,16 @@ public class ChangeMesh : MonoBehaviour
     }
     public void ResetModel()
     {
-      
-        modelFilter.mesh = modelOLd;
+        skin.gameObject.SetActive(true);
+        skinNormal.gameObject.SetActive(false);
+         modelFilter.mesh = modelOLd;
     }    
     public void ActiveEffectAI()
     {
         effect.gameObject.SetActive(true);
-    }    
+    }
+    private void OnDisable()
+    {
+        StopAllCoroutines();
+    }
 }

@@ -19,7 +19,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject gameLose;
     [SerializeField] private GameObject BannerDelay321;
     public LevelMap LoadingLevelMap;
-    
+
     private void Awake()
     {
         if (ins == null)
@@ -32,22 +32,26 @@ public class UIManager : MonoBehaviour
     {
         startGame = true;
         Init();
-        if(startGame)
+        if (startGame)
         {
             StartCoroutine(StopRotation());
-        }    
+        }
 
     }
     public void Init()
     {
         gameWin.gameObject.SetActive(false);
         gameLose.gameObject.SetActive(false);
-        checkTime = true;
+        checkTime = false;
         checkBanner = true;
         hideCanvans.gameObject.SetActive(false);
         time.gameObject.SetActive(false);
         joystick.gameObject.SetActive(false);
         BannerDelay321.gameObject.SetActive(false);
+    }
+    public void SetChecktime()
+    {
+        checkTime = true;
     }
     public void ActiveBannerDelay321()
     {
@@ -60,14 +64,14 @@ public class UIManager : MonoBehaviour
             BannerDelay321.gameObject.SetActive(true);
             BannerDelay321.GetComponent<BannerDelay321>().aaaa();
         }
-        
+
     }
     IEnumerator StopRotation()
     {
         yield return new WaitForSeconds(4f);
         {
             joystick.gameObject.SetActive(true);
-           
+
             //checkBanner = true;
             if (!checkTime)
             {
@@ -85,15 +89,14 @@ public class UIManager : MonoBehaviour
             timeCountdown -= Time.deltaTime;
             textTime.text = "Time : " + Mathf.Round(timeCountdown).ToString();
         }
-           
+
         if (timeCountdown < 0f && !checkTime)
         {
-            checkBanner = true;
             timeCountdown = 0f;
-            // ActiveHideCanvas();
-           // ButtonHide();
+            ButtonHide();
+            Debug.Log(checkTime);
         }
-        if(!checkBanner)
+        if (!checkBanner)
         {
             if (!joystick.check)
             {
@@ -103,8 +106,8 @@ public class UIManager : MonoBehaviour
             {
                 hideCanvans.gameObject.SetActive(false);
             }
-        }    
-        
+        }
+
     }
 
     public void ButtonHide()
@@ -119,7 +122,7 @@ public class UIManager : MonoBehaviour
     }
     public void GameWin()
     {
-        
+
         gameWin.gameObject.SetActive(true);
         gameLose.gameObject.SetActive(false);
     }
@@ -130,7 +133,11 @@ public class UIManager : MonoBehaviour
     }
     public void Restart()
     {
-        if(DataManager.instance.userData.level<1)
+        SceneManager.LoadScene(0);
+    }
+    public void NextLevel()
+    {
+        if(DataManager.instance.userData.level<2)
         {
             startGame = true;
             //SceneManager.LoadScene(0);
@@ -138,15 +145,16 @@ public class UIManager : MonoBehaviour
             Init();
             timeCountdown = 15;
             StartCoroutine(StopRotation());
-            AIandPosController.instance.InitPosAI();
+            //AIandPosController.instance.InitPosAI();
             DataManager.instance.UpLevel();
             LoadingLevelMap.LoadingLevel();
         }
         else
         {
-            gameWin.gameObject.SetActive(true);
+            SceneManager.LoadScene(0);
         }
-    }
+
+    }    
     private void OnDisable()
     {
         StopAllCoroutines();
