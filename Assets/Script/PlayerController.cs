@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
         checkBoss = false;
         isDead = false;
         effect.gameObject.SetActive(false);
-
+        
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
             UIManager.ins.ActiveBannerDelay321();
 
         }    
+  
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -34,6 +35,10 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("AIPlayer"))
         {
                anim.SetAnimAttack();
+        }
+        if (collision.gameObject.CompareTag("TableJump"))
+        {
+            transform.DOJump(gameObject.transform.position + new Vector3(0f, 0.5f,0.5f),0.4f,1,0.5f);
         }
 
     }

@@ -94,7 +94,6 @@ public class UIManager : MonoBehaviour
         {
             timeCountdown = 0f;
             ButtonHide();
-            Debug.Log(checkTime);
         }
         if (!checkBanner)
         {

@@ -17,11 +17,11 @@ public class EffectManager : MonoBehaviour
 
 
 
-    public Effect White; 
+    public Effect hplose; 
 
     public void SpawnWhiteEffect(Vector3 pos, Transform parent)
     {
-       SpawnEffect("White", White, pos, parent);
+       SpawnEffect("White", hplose, pos, parent);
     }
 
 
