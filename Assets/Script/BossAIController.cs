@@ -59,7 +59,8 @@ public class BossAIController : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player") )
         {
-            GameManager.instance.OnLose();
+            animBoss.SetAnimDamage();
+            StartCoroutine(WaitAttackPlayer());
             transform.DOKill();
         }    
         if(collision.gameObject.CompareTag("Item"))
@@ -73,10 +74,18 @@ public class BossAIController : MonoBehaviour
            // StartCoroutine(WaitAttack());
         }
     }
+
     public void ActiveEffectBoss()
     {
         effectboss.gameObject.SetActive(true);
         MoveRandom();
+    }
+    IEnumerator WaitAttackPlayer()
+    {
+        yield return new WaitForSeconds(1f);
+        {
+            GameManager.instance.OnLose();
+        }
     }
     private void OnDisable()
     {

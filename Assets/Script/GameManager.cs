@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public CameraController cameraController;
     public float timePlay;
     public float countAI;
+    public Door door;
     private void Awake()
     {
         if (instance == null)
@@ -60,7 +61,8 @@ public class GameManager : MonoBehaviour
     }
     IEnumerator DelayActiveBoss()
     {
-        yield return new WaitForSeconds(1.5f);
+        door.rotationDoor();
+        yield return new WaitForSeconds(2f);
         {
             bossAI.gameObject.SetActive(true);
             yield return new WaitForSeconds(0.1f);
