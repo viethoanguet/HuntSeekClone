@@ -91,7 +91,7 @@ public class DataManager :MonoBehaviour
     [System.Serializable]
     public class UserData
     {
-        public int coin = 20;
+        public int coin = 200;
         public int level = 0;
        // public string userName = "UnknowUser";
         //public int currentCharacterID = 0;
