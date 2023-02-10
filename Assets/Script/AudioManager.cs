@@ -13,17 +13,29 @@ public class AudioManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
     }
-    public AudioSource door;
+    public AudioSource Ondoor;
+    public AudioSource gamewin;
+    public AudioSource gamelose;
     private void Start()
     {
-        door.enabled = false;
+        
     }
 
     //public AudioClip clipdoor;
-    public void onDoor()
+    public void OndoorPlay(AudioClip clip)
     {
-        door.enabled = true;
-        door.Play();
+        Ondoor.clip = clip;
+        Ondoor.Play();
+    }
+    public void PlaygameWin(AudioClip clip)
+    {
+        gamewin.clip = clip;
+        gamewin.Play();
+    }
+    public void PlaygameLose(AudioClip clip)
+    {
+        gamelose.clip = clip;
+        gamelose.Play();
     }
 
 

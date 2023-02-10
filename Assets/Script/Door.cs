@@ -4,6 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 public class Door : MonoBehaviour
 {
+    public AudioClip musicdoor;
     // Start is called before the first frame update
     private void Start()
     {
@@ -15,7 +16,7 @@ public class Door : MonoBehaviour
        new Vector3(0f, -120f, 0), 3f)
        .SetEase(Ease.Linear)
        .OnComplete(() => rotationDoorComback());
-        AudioManager.Instance.onDoor();
+        AudioManager.Instance.OndoorPlay(musicdoor);
     }
     public void rotationDoorComback()
     {

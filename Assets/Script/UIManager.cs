@@ -87,7 +87,7 @@ public class UIManager : MonoBehaviour
         if (!checkTime)
         {
             timeCountdown -= Time.deltaTime;
-            textTime.text = "Time : " + Mathf.Round(timeCountdown).ToString();
+            textTime.text = "00:" + Mathf.Round(timeCountdown).ToString();
         }
 
         if (timeCountdown < 0f && !checkTime)
@@ -118,6 +118,7 @@ public class UIManager : MonoBehaviour
         LoadingLevelMap.gameManager.ActiveBossAI();
         time.gameObject.SetActive(false);
         CameraController.instance.setCam1();
+        joystick.gameObject.SetActive(false);
     }
     public void GameWin()
     {
