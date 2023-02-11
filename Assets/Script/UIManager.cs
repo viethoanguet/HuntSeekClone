@@ -92,8 +92,11 @@ public class UIManager : MonoBehaviour
 
         if (timeCountdown < 0f && !checkTime)
         {
+            joystick.check = false;
             timeCountdown = 0f;
             ButtonHide();
+            joystick.gameObject.SetActive(false);
+            checkTime = true;
         }
         if (!checkBanner)
         {
@@ -137,6 +140,7 @@ public class UIManager : MonoBehaviour
     }
     public void NextLevel()
     {
+        
         if(DataManager.instance.userData.level<2)
         {
             startGame = true;
@@ -151,7 +155,13 @@ public class UIManager : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene(0);
+            startGame = true;
+            //SceneManager.LoadScene(0);
+            CameraController.instance.setCam2();
+            Init();
+            timeCountdown = 15;
+            StartCoroutine(StopRotation());
+            LoadingLevelMap.RandomLevel();
         }
 
     }    

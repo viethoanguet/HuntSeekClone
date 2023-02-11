@@ -113,6 +113,7 @@ MonoBehaviour:
   effect: {fileID: 5545295550907051999}
   skin: {fileID: 8569265756127129197}
   skinNormal: {fileID: 6923289004857291804}
+  roomtexture: {fileID: 2100000, guid: 259c553a9c9a6d24ea8494f371536e04, type: 2}
 --- !u!1 &2302108665891181914
 GameObject:
   m_ObjectHideFlags: 0

@@ -1286,6 +1286,7 @@ MonoBehaviour:
   - {fileID: 4300000, guid: 1408b9b7685cbba40a765042fa081e6d, type: 3}
   current: 0
   player: {fileID: 5715176189458116477}
+  roomtexure: {fileID: 2100000, guid: 259c553a9c9a6d24ea8494f371536e04, type: 2}
 --- !u!1 &5399639848296159061
 GameObject:
   m_ObjectHideFlags: 0

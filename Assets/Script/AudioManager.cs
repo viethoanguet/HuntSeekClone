@@ -16,6 +16,9 @@ public class AudioManager : MonoBehaviour
     public AudioSource Ondoor;
     public AudioSource gamewin;
     public AudioSource gamelose;
+    //public AudioSource coin;
+   // public AudioSource Bossmove;
+    //public AudioSource BossAttack;
     private void Start()
     {
         

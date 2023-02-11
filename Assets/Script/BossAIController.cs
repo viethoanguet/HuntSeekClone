@@ -66,6 +66,7 @@ public class BossAIController : MonoBehaviour
         if(collision.gameObject.CompareTag("Item"))
         {
              animBoss.SetAnimDamage();
+            Debug.Log("item");
            // StartCoroutine(WaitAttack());
         }
         if (collision.gameObject.CompareTag("AIPlayer"))

@@ -13,6 +13,7 @@ public class InputManager : MonoBehaviour
     private float inputZ;
     private Vector3 v_movement;
     public float toRotationSpeed;
+    public ArrowScript checkRotation;
     private void Start()
     {
         joystick = UIManager.ins.joystick;
@@ -21,7 +22,7 @@ public class InputManager : MonoBehaviour
     private void FixedUpdate()
     {
 
-        if(joystick.check)
+        if(joystick.check && checkRotation.checkArrow)
         {
             anim.SetAnimRun(true);
 

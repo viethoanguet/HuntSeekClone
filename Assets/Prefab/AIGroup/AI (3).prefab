@@ -396,6 +396,7 @@ MonoBehaviour:
   effect: {fileID: 400131975555515788}
   skin: {fileID: 7568019613826927893}
   skinNormal: {fileID: 2985081358381981263}
+  roomtexture: {fileID: 2100000, guid: 259c553a9c9a6d24ea8494f371536e04, type: 2}
 --- !u!1001 &400131975555425178
 PrefabInstance:
   m_ObjectHideFlags: 0

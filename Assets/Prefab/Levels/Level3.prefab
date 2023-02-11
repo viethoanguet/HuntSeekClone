@@ -4885,6 +4885,14 @@ PrefabInstance:
       propertyPath: joystick
       value: 
       objectReference: {fileID: 8703034294730050565, guid: 384142f193748a94f9de74934d4a4091, type: 3}
+    - target: {fileID: 5715176189458116478, guid: e0097d9fcf7154649a82c6e1446aa164, type: 3}
+      propertyPath: checkArrow
+      value: 
+      objectReference: {fileID: 2078948715216293328}
+    - target: {fileID: 5715176189458116478, guid: e0097d9fcf7154649a82c6e1446aa164, type: 3}
+      propertyPath: checkRotation
+      value: 
+      objectReference: {fileID: 2078948715216293328}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0097d9fcf7154649a82c6e1446aa164, type: 3}
 --- !u!114 &7089046329185613329 stripped

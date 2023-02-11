@@ -9,6 +9,7 @@ public class ChangeMeshPlayer : MonoBehaviour
     [SerializeField] private Mesh[] modelChange;
     [SerializeField] private int current;
     [SerializeField] private PlayerController player;
+    public Material roomtexure;
     //public GameObject skin;
    // public GameObject skinNormal;
     private void Start()
@@ -22,7 +23,7 @@ public class ChangeMeshPlayer : MonoBehaviour
         {
             modelFilter.mesh = modelChange[current];
             modelMesh.gameObject.SetActive(false);
-
+            modelFilter.GetComponent<Renderer>().material = roomtexure;
         }    
 
     }

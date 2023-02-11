@@ -31,6 +31,12 @@ public class LevelMap : MonoBehaviour
         // level.Add(a);
         gameManager = a.GetComponent<GameManager>();
     }
+    public void RandomLevel()
+    {
+        Destroy(a);
+        a = Instantiate(DataManager.instance.assetManager.gameManagers[Random.Range(0,2)], gameObject.transform);
+        gameManager = a.GetComponent<GameManager>();
+    }
     public void checkbo()
     {
         if(gameManager.checkBosslevel)

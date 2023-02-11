@@ -11,6 +11,7 @@ public class ChangeMesh : MonoBehaviour
     public GameObject effect;
     public GameObject skin;
     public GameObject skinNormal;
+    public Material roomtexture;
     private void Start()
     {
         modelOLd = modelFilter.mesh;
@@ -23,6 +24,7 @@ public class ChangeMesh : MonoBehaviour
     {
         //effect.gameObject.SetActive(true);
         modelFilter.mesh = modelChange[current];
+        modelFilter.GetComponent<Renderer>().material =roomtexture ;
        // EffectManager.Instance.SpawnWhiteEffect(transform.position, transform);
        
     }
