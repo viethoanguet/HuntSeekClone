@@ -15,7 +15,7 @@ public class ArrowScript : MonoBehaviour
     private void OnEnable()
     {
         checkArrow = false;
-        if (DataManager.instance.userData.level < 2)
+        if (DataManager.instance.userData.level != 2)
         {
             RandomRotation();
         }    

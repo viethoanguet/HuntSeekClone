@@ -11,6 +11,7 @@ public class BossAIController : MonoBehaviour
     public BossAIAnimator animBoss;
     [SerializeField] private List<Transform> posAI;
     public GameObject effectboss;
+    public AudioClip bossMove;
     private void Start()
     {
         check = false;
@@ -19,17 +20,20 @@ public class BossAIController : MonoBehaviour
     }
     public void MoveRandom()
     {
+       // AudioManager.Instance.OnBossMove(bossMove);
         posN = Random.Range(0, posAI.Count);
         posRandom = posAI[posN].position;
         gameObject.transform.forward = Direction(posRandom);
         transform.DOKill();
         if (!check)
         {
+  
             transform.DOMove(posRandom, SetTime(posRandom)).SetEase(Ease.Linear).OnComplete(() =>
             {
+
                 //animBoss.SetAnimDamage();
-              //  MoveRandom();
-                  StartCoroutine(WaitAttack());
+                //  MoveRandom();
+                StartCoroutine(WaitAttack());
             });
         }
     }

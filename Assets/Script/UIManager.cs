@@ -161,7 +161,9 @@ public class UIManager : MonoBehaviour
             Init();
             timeCountdown = 15;
             StartCoroutine(StopRotation());
+            DataManager.instance.UpLevel();
             LoadingLevelMap.RandomLevel();
+
         }
 
     }    

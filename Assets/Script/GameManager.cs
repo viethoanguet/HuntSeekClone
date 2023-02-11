@@ -62,7 +62,7 @@ public class GameManager : MonoBehaviour
     IEnumerator DelayActiveBoss()
     {
         door.rotationDoor();
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         {
             bossAI.gameObject.SetActive(true);
             yield return new WaitForSeconds(0.1f);

@@ -17,7 +17,7 @@ public class AudioManager : MonoBehaviour
     public AudioSource gamewin;
     public AudioSource gamelose;
     //public AudioSource coin;
-   // public AudioSource Bossmove;
+    public AudioSource Bossmove;
     //public AudioSource BossAttack;
     private void Start()
     {
@@ -40,6 +40,11 @@ public class AudioManager : MonoBehaviour
         gamelose.clip = clip;
         gamelose.Play();
     }
-
+    public void OnBossMove(AudioClip clip)
+    {
+        Bossmove.clip = clip;
+       // Bossmove.loop=true;
+        Bossmove.Play();
+    }    
 
 }

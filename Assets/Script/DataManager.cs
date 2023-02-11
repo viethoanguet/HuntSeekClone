@@ -65,7 +65,8 @@ public class DataManager :MonoBehaviour
     }
     public void UpLevel()
     {
-        userData.level = Mathf.Min(userData.level + 1, assetManager.gameManagers.Count - 1);
+        userData.level = userData.level + 1;
+            //Mathf.Min(userData.level + 1, assetManager.gameManagers.Count - 1);
         SaveUserData();
         LoadLevelData();
     }
