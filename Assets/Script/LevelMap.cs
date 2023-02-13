@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class LevelMap : MonoBehaviour
 {
+    public bool checkTimePlay = true;
+    public float timePlay = 30f;
     public bool checkBosslevel;
     //==false ai
     //==true player
     public List<GameObject> level = new List<GameObject>();
     private GameObject a;
     public GameManager gameManager;
+
     void Start()
     {
         checkBosslevel = false;
-         a = Instantiate(DataManager.instance.assetManager.gameManagers[DataManager.instance.userData.level],gameObject.transform);
+        a = Instantiate(DataManager.instance.assetManager.gameManagers[DataManager.instance.userData.level], gameObject.transform);
         //level.Add(a);
         gameManager = a.GetComponent<GameManager>();
 
@@ -21,8 +24,10 @@ public class LevelMap : MonoBehaviour
     public void LoadingLevel()
     {
         Destroy(a);
-         a = Instantiate(DataManager.instance.assetManager.gameManagers[DataManager.instance.userData.level],gameObject.transform);
+        a = Instantiate(DataManager.instance.assetManager.gameManagers[DataManager.instance.userData.level], gameObject.transform);
         // level.Add(a);
+        checkTimePlay = true;
+        timePlay = 30f;
         gameManager = a.GetComponent<GameManager>();
     }
     public void RestartLevel()
@@ -34,12 +39,12 @@ public class LevelMap : MonoBehaviour
     public void RandomLevel()
     {
         Destroy(a);
-        a = Instantiate(DataManager.instance.assetManager.gameManagers[Random.Range(0,2)], gameObject.transform);
+        a = Instantiate(DataManager.instance.assetManager.gameManagers[Random.Range(0, 2)], gameObject.transform);
         gameManager = a.GetComponent<GameManager>();
     }
     public void checkbo()
     {
-        if(gameManager.checkBosslevel)
+        if (gameManager.checkBosslevel)
         {
             checkBosslevel = true;
         }
@@ -47,6 +52,23 @@ public class LevelMap : MonoBehaviour
         {
             checkBosslevel = false;
         }
+    }
+    private void Update()
+    {
+        if (checkTimePlay)
+            timePlay -= Time.deltaTime;
+        if (timePlay < 0)
+        {
+            timePlay = 0;
+            Debug.Log("checkkkk print");
+            CheckTimeOnComplete();
+        }
+    }
+    public void CheckTimeOnComplete()
+    {
+        checkTimePlay = false;
+        
+        a.GetComponent<GameManager>().ActiveBossAILevelMap();
     }
 
 }

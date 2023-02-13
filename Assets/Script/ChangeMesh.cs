@@ -52,8 +52,9 @@ public class ChangeMesh : MonoBehaviour
     public void ResetModel()
     {
         skin.gameObject.SetActive(true);
+        effect.gameObject.SetActive(true);
         skinNormal.gameObject.SetActive(false);
-         modelFilter.mesh = modelOLd;
+        modelFilter.mesh = modelOLd;
     }    
     public void ActiveEffectAI()
     {

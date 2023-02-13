@@ -87,7 +87,16 @@ public class UIManager : MonoBehaviour
         if (!checkTime)
         {
             timeCountdown -= Time.deltaTime;
-            textTime.text = "00:" + Mathf.Round(timeCountdown).ToString();
+           
+            if (Mathf.Round(timeCountdown) > 9f)
+            {
+                textTime.text = "00:" + Mathf.Round(timeCountdown).ToString();
+            }
+            else
+            {
+                textTime.text = "00:0" + Mathf.Round(timeCountdown).ToString();
+            }
+           
         }
 
         if (timeCountdown < 0f && !checkTime)
@@ -125,7 +134,6 @@ public class UIManager : MonoBehaviour
     }
     public void GameWin()
     {
-
         gameWin.gameObject.SetActive(true);
         gameLose.gameObject.SetActive(false);
     }
@@ -141,8 +149,9 @@ public class UIManager : MonoBehaviour
     public void NextLevel()
     {
         
-        if(DataManager.instance.userData.level<2)
+        if(DataManager.instance.userData.level<4)
         {
+            Debug.Log("uimanager  " + DataManager.instance.userData.level);
             startGame = true;
             //SceneManager.LoadScene(0);
             CameraController.instance.setCam2();

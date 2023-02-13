@@ -80,6 +80,19 @@ public class GameManager : MonoBehaviour
             UIManager.ins.GameWin();
         }
     }
+    public void ActiveBossAILevelMap()
+    {
+        if(!checkBosslevel)
+        {
+            bossAI.check = true;
+            bossAI.gameObject.SetActive(false);
+            if (!player.isDead)
+            {
+                UIManager.ins.GameWin();
+            }
+        }    
+
+    }    
     public void OnLose()
     {
         player.isDead = true;

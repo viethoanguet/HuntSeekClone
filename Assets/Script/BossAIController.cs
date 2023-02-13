@@ -18,16 +18,22 @@ public class BossAIController : MonoBehaviour
         //MoveRandom();
         effectboss.gameObject.SetActive(false);
     }
+    private void OnEnable()
+    {
+        
+    }
     public void MoveRandom()
     {
-       // AudioManager.Instance.OnBossMove(bossMove);
-        posN = Random.Range(0, posAI.Count);
-        posRandom = posAI[posN].position;
-        gameObject.transform.forward = Direction(posRandom);
-        transform.DOKill();
         if (!check)
         {
-  
+            // AudioManager.Instance.OnBossMove(bossMove);
+            posN = Random.Range(0, posAI.Count);
+            posRandom = posAI[posN].position;
+            gameObject.transform.forward = Direction(posRandom);
+            transform.DOKill();
+            //  if (!check)
+            // {
+
             transform.DOMove(posRandom, SetTime(posRandom)).SetEase(Ease.Linear).OnComplete(() =>
             {
 
@@ -35,7 +41,10 @@ public class BossAIController : MonoBehaviour
                 //  MoveRandom();
                 StartCoroutine(WaitAttack());
             });
-        }
+                
+             //   });
+            }
+        
     }
     private Vector3 Direction(Vector3 pos)
     {
@@ -47,7 +56,7 @@ public class BossAIController : MonoBehaviour
     private float SetTime(Vector3 pos)
     {
         float distance = Vector3.Distance(pos, gameObject.transform.position);
-        return distance /1;
+        return distance / 1;
     }
     IEnumerator WaitAttack()
     {
@@ -61,22 +70,22 @@ public class BossAIController : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("Player") )
+        if (collision.gameObject.CompareTag("Player"))
         {
             animBoss.SetAnimDamage();
             StartCoroutine(WaitAttackPlayer());
             transform.DOKill();
-        }    
-        if(collision.gameObject.CompareTag("Item"))
+        }
+        if (collision.gameObject.CompareTag("Item"))
         {
-             animBoss.SetAnimDamage();
+            animBoss.SetAnimDamage();
             Debug.Log("item");
-           // StartCoroutine(WaitAttack());
+            // StartCoroutine(WaitAttack());
         }
         if (collision.gameObject.CompareTag("AIPlayer"))
         {
             //animBoss.SetAnimDamage();
-           // StartCoroutine(WaitAttack());
+            // StartCoroutine(WaitAttack());
         }
     }
 
