@@ -21,7 +21,8 @@ public class ArrowScript : MonoBehaviour
         }    
         else
         {
-            RandomRotationHunter();
+            RandomRotation();
+            //RandomRotationHunter();
         }
     }
     public void RandomRotation()

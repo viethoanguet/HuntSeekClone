@@ -98,7 +98,7 @@ public class AIPlayer : MonoBehaviour
             changMesh.ActiveEffectAI();
             changMesh.ResetModel();
             EffectManager.Instance.SpawnWhiteEffect(transform.position+ new Vector3(0f,1f,0f), transform);
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.3f);
             {
                 anim.SetAnimDie();
                 yield return new WaitForSeconds(1f);

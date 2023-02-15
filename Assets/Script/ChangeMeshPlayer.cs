@@ -10,8 +10,15 @@ public class ChangeMeshPlayer : MonoBehaviour
     [SerializeField] private int current;
     [SerializeField] private PlayerController player;
     public Material roomtexure;
+    public GameObject ModelPlayer;
     //public GameObject skin;
-   // public GameObject skinNormal;
+    // public GameObject skinNormal;
+    private void OnEnable()
+    {
+        modelFilter.gameObject.SetActive(false);
+        modelMesh.gameObject.SetActive(false);
+        ModelPlayer.gameObject.SetActive(true);
+    }
     private void Start()
     {
         current = Random.Range(1, modelChange.Length);
@@ -19,7 +26,10 @@ public class ChangeMeshPlayer : MonoBehaviour
     }
     public void ChangeMeshModel()
     {
-        if(!player.checkBoss)
+        modelFilter.gameObject.SetActive(true);
+        modelMesh.gameObject.SetActive(true);
+        ModelPlayer.gameObject.SetActive(false);
+        if (!player.checkBoss)
         {
             modelFilter.mesh = modelChange[current];
             modelMesh.gameObject.SetActive(false);
@@ -31,8 +41,9 @@ public class ChangeMeshPlayer : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
         {
+
             player.ActiveEffect();
-            gameObject.transform.DOScale(new Vector3(1, 1, 1), 0.2f);
+          //  gameObject.transform.DOScale(new Vector3(1, 1, 1), 0.2f);
             yield return new WaitForSeconds(0.2f);
             {
                 ChangeMeshModel();
