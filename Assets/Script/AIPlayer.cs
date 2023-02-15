@@ -12,6 +12,7 @@ public class AIPlayer : MonoBehaviour
     public GameManager gameManager;
     public ChangeMesh changMesh;
     public AIManager aiMng;
+    public AIPlayerAnimation anim;
     void Start()
     {
       
@@ -60,7 +61,7 @@ public class AIPlayer : MonoBehaviour
         {
             checkAIBoss = true;
            // EffectManager.Instance.SpawnWhiteEffect(transform.position, null);
-            gameObject.transform.DOScale(new Vector3(1, 1, 1), 1f);
+            gameObject.transform.DOScale(new Vector3(2, 2, 2), 1f);
            // UIManager.ins.checkTime = false;
             gameManager.countAI--;
             StartCoroutine(WaitActiveFalse());
@@ -98,12 +99,17 @@ public class AIPlayer : MonoBehaviour
             changMesh.ResetModel();
             EffectManager.Instance.SpawnWhiteEffect(transform.position+ new Vector3(0f,1f,0f), transform);
             yield return new WaitForSeconds(1f);
-            {            
-                gameObject.SetActive(false);
-                gameObject.transform.DOKill();
-                gameManager.countAI--;
-                gameManager.OnWin();
+            {
+                anim.SetAnimDie();
+                yield return new WaitForSeconds(1f);
+                {
+                    gameObject.SetActive(false);
+                    gameObject.transform.DOKill();
+                    gameManager.countAI--;
+                    gameManager.OnWin();
+                }
             }
+           
 
         }
 

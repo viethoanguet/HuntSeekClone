@@ -12,7 +12,7 @@ public class LoadingController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI txtPercent;
     [SerializeField] private Image imgLoadingIndex;
     private float _percentValue = 0;
-    private float _timeLoadingMin = 5f;
+    private float _timeLoadingMin = 4f;
     public void Awake()
     {
         txtPercent.text = string.Format(LOADING, _percentValue);
@@ -21,13 +21,13 @@ public class LoadingController : MonoBehaviour
 
     private void Loading()
     {
-        DOTween.To(x => _percentValue = (int)x, 0, 99, _timeLoadingMin).SetEase(Ease.OutQuad).OnUpdate(() =>
+        DOTween.To(x => _percentValue = (int)x, 37, 99, _timeLoadingMin).SetEase(Ease.OutQuad).OnUpdate(() =>
         {
             txtPercent.text = string.Format(LOADING, _percentValue);
             imgLoadingIndex.fillAmount = _percentValue / 100;
         });
 
-        DOTween.To(x => _percentValue = (int)x, 0, 100, _timeLoadingMin).OnComplete(() =>
+        DOTween.To(x => _percentValue = (int)x, 37, 100, _timeLoadingMin).OnComplete(() =>
         {
             txtPercent.text = string.Format(LOADING, 100);
             imgLoadingIndex.fillAmount = 1;

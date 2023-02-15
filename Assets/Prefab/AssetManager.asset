@@ -15,8 +15,8 @@ MonoBehaviour:
   playerCharacters:
   - {fileID: 5715176189458116477, guid: e0097d9fcf7154649a82c6e1446aa164, type: 3}
   gameManagers:
-  - {fileID: 9054420947887560096, guid: b4aef1ae55d447a41aeb1474bd4a154d, type: 3}
-  - {fileID: 7173660225220517720, guid: d3c6f305bdea45c43b9daf965a245486, type: 3}
+  - {fileID: 2023050428387601057, guid: 9207e5aa648dceb4abff9c27406a928a, type: 3}
+  - {fileID: 3156186603674757505, guid: 94d36e345279e4540a1c1ce49b12d6b6, type: 3}
   - {fileID: 7173660225220517720, guid: 058ca7b6c780e7b4e92459adadcfd66b, type: 3}
-  - {fileID: 7173660225220517720, guid: adda7f42f98488847b61c94a089b3b89, type: 3}
+  - {fileID: 2490776050673259089, guid: 29b0ebe637827d244bc59e1a8d00c7f8, type: 3}
   - {fileID: 9054420947887560096, guid: dfb8dca47b88f15438910d8eceec2df7, type: 3}
