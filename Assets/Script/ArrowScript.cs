@@ -8,7 +8,6 @@ public class ArrowScript : MonoBehaviour
     private BoxCollider box;
     private void Start()
     {
-        gameObject.transform.DOKill();
     }
     private void OnEnable()
     {
@@ -44,6 +43,7 @@ public class ArrowScript : MonoBehaviour
     private void ActiveBox()
     {
         box.enabled = true;
+        transform.DOKill();
     }
     private void OnDisable()
     {
