@@ -20,31 +20,25 @@ public class BossAIController : MonoBehaviour
     }
     private void OnEnable()
     {
-        
+        gameObject.transform.DOKill();
     }
     public void MoveRandom()
     {
         if (!check)
         {
+            if (posAI.Count < 1) { return; }
             // AudioManager.Instance.OnBossMove(bossMove);
             posN = Random.Range(0, posAI.Count);
             posRandom = posAI[posN].position;
             gameObject.transform.forward = Direction(posRandom);
             transform.DOKill();
-            //  if (!check)
-            // {
-
             transform.DOMove(posRandom, SetTime(posRandom)).SetEase(Ease.Linear).OnComplete(() =>
             {
-
-                //animBoss.SetAnimDamage();
-                //  MoveRandom();
+                transform.DOKill();
                 StartCoroutine(WaitAttack());
             });
-                
-             //   });
-            }
-        
+        }
+
     }
     private Vector3 Direction(Vector3 pos)
     {
@@ -64,6 +58,7 @@ public class BossAIController : MonoBehaviour
         posAI.RemoveAt(posN);
         yield return new WaitForSeconds(2f);
         {
+            
             //animBoss.SetAnimRun();
             MoveRandom();
         }

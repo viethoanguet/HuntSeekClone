@@ -42,17 +42,6 @@ public class LevelMap : MonoBehaviour
         a = Instantiate(DataManager.instance.assetManager.gameManagers[Random.Range(0, 2)], gameObject.transform);
         gameManager = a.GetComponent<GameManager>();
     }
-    public void checkbo()
-    {
-        if (gameManager.checkBosslevel)
-        {
-            checkBosslevel = true;
-        }
-        else
-        {
-            checkBosslevel = false;
-        }
-    }
     private void Update()
     {
         if (checkTimePlay)
@@ -60,7 +49,6 @@ public class LevelMap : MonoBehaviour
         if (timePlay < 0)
         {
             timePlay = 0;
-            Debug.Log("checkkkk print");
             CheckTimeOnComplete();
         }
     }

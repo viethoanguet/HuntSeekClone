@@ -151,9 +151,7 @@ public class UIManager : MonoBehaviour
         
         if(DataManager.instance.userData.level<4)
         {
-            Debug.Log("uimanager  " + DataManager.instance.userData.level);
             startGame = true;
-            //SceneManager.LoadScene(0);
             CameraController.instance.setCam2();
             Init();
             timeCountdown = 15;

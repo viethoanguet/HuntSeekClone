@@ -91,12 +91,12 @@ public class GameManager : MonoBehaviour
                 UIManager.ins.GameWin();
             }
         }    
-
     }    
     public void OnLose()
     {
         player.isDead = true;
         UIManager.ins.GameLose();
+        checkBosslevel = true;
     }
     private void OnDisable()
     {

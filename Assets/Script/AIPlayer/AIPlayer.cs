@@ -4,7 +4,6 @@ using UnityEngine;
 using DG.Tweening;
 public class AIPlayer : MonoBehaviour
 {
-    [SerializeField] bool checkAIBoss;
     public bool check;
     private Vector3 posRandom;
     public Transform archor;
@@ -21,7 +20,6 @@ public class AIPlayer : MonoBehaviour
     private void OnEnable()
     {
         isDealAI = false;
-        checkAIBoss = false;
         check = false;
     }
     public void MoveRandom()
@@ -59,7 +57,6 @@ public class AIPlayer : MonoBehaviour
     {
         if (other.CompareTag("Arrow"))
         {
-            checkAIBoss = true;
            // EffectManager.Instance.SpawnWhiteEffect(transform.position, null);
             gameObject.transform.DOScale(new Vector3(2, 2, 2), 1f);
            // UIManager.ins.checkTime = false;
@@ -73,6 +70,7 @@ public class AIPlayer : MonoBehaviour
         if(collision.gameObject.CompareTag("BossAI"))
         {
             StartCoroutine(WaitTimeCheckCollision());
+            transform.DOKill();
         }
         if(collision.gameObject.CompareTag("Player"))
         {
@@ -98,10 +96,10 @@ public class AIPlayer : MonoBehaviour
             changMesh.ActiveEffectAI();
             changMesh.ResetModel();
             EffectManager.Instance.SpawnWhiteEffect(transform.position+ new Vector3(0f,1f,0f), transform);
-            yield return new WaitForSeconds(0.3f);
+            yield return new WaitForSeconds(0.2f);
             {
                 anim.SetAnimDie();
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(1.5f);
                 {
                     gameObject.SetActive(false);
                     gameObject.transform.DOKill();

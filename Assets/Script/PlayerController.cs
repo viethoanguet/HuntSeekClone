@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
         {
             effect.gameObject.SetActive(true);
             effect.transform.DOScale(new Vector3(2, 2, 2), 0.1f);
-            gameObject.transform.DOScale(new Vector3(2, 2, 2), 1f);
+            gameObject.transform.DOScale(new Vector3(1, 1, 1), 1f);
             checkBoss = true;
             UIManager.ins.SetChecktime();
             UIManager.ins.ActiveBannerDelay321();

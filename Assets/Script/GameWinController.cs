@@ -13,7 +13,6 @@ public class GameWinController : MonoBehaviour
     private void Update()
     {
         textcoin.text = DataManager.instance.userData.coin.ToString();
-        Debug.Log(DataManager.instance.userData.coin);
     }
     public void SumCoin()
     {
