@@ -1,46 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class LevelMap : MonoBehaviour
 {
     public bool checkTimePlay = true;
     public float timePlay = 30f;
-    public bool checkBosslevel;
-    //==false ai
-    //==true player
-    public List<GameObject> level = new List<GameObject>();
-    private GameObject a;
-    public GameManager gameManager;
 
-    void Start()
-    {
-        checkBosslevel = false;
-        a = Instantiate(DataManager.instance.assetManager.gameManagers[DataManager.instance.userData.level], gameObject.transform);
-        //level.Add(a);
-        gameManager = a.GetComponent<GameManager>();
-
-    }
     public void LoadingLevel()
     {
-        Destroy(a);
-        a = Instantiate(DataManager.instance.assetManager.gameManagers[DataManager.instance.userData.level], gameObject.transform);
-        // level.Add(a);
-        checkTimePlay = true;
-        timePlay = 30f;
-        gameManager = a.GetComponent<GameManager>();
-    }
-    public void RestartLevel()
-    {
-        a = Instantiate(DataManager.instance.assetManager.gameManagers[DataManager.instance.userData.level], gameObject.transform);
-        // level.Add(a);
-        gameManager = a.GetComponent<GameManager>();
-    }
-    public void RandomLevel()
-    {
-        Destroy(a);
-        a = Instantiate(DataManager.instance.assetManager.gameManagers[Random.Range(0, 2)], gameObject.transform);
-        gameManager = a.GetComponent<GameManager>();
+        SceneManager.LoadScene(DataManager.instance.userData.level+2) ;
     }
     private void Update()
     {
@@ -55,8 +24,7 @@ public class LevelMap : MonoBehaviour
     public void CheckTimeOnComplete()
     {
         checkTimePlay = false;
-        
-        a.GetComponent<GameManager>().ActiveBossAILevelMap();
+        GameManager.instance.ActiveBossAILevelMap();
     }
 
 }

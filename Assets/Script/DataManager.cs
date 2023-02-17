@@ -5,7 +5,7 @@ using UnityEngine;
 using System;
 using Newtonsoft.Json;
 
-public class DataManager :MonoBehaviour
+public class DataManager : MonoBehaviour
 {
     public static DataManager instance;
     public Action<int> GoldCallback;
@@ -32,12 +32,8 @@ public class DataManager :MonoBehaviour
         else
         {
             userData = new UserData();
-           // if (userData.unlockedCharacterIDs.Count == 0)
-          //  {
-               // userData.currentCharacterID = 0;
-                //userData.unlockedCharacterIDs.Add(0);
-                SaveUserData();
-         //   }
+            SaveUserData();
+
         }
     }
     public void SaveUserData()
@@ -66,7 +62,7 @@ public class DataManager :MonoBehaviour
     public void UpLevel()
     {
         userData.level = userData.level + 1;
-            //Mathf.Min(userData.level + 1, assetManager.gameManagers.Count - 1);
+        //Mathf.Min(userData.level + 1, assetManager.gameManagers.Count - 1);
         SaveUserData();
         LoadLevelData();
     }
@@ -94,9 +90,9 @@ public class DataManager :MonoBehaviour
     {
         public int coin = 200;
         public int level = 0;
-       // public string userName = "UnknowUser";
+        // public string userName = "UnknowUser";
         //public int currentCharacterID = 0;
-      //  public List<int> unlockedCharacterIDs = new List<int>();
+        //  public List<int> unlockedCharacterIDs = new List<int>();
     }
     public class LevelData
     {

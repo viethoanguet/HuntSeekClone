@@ -22,16 +22,14 @@ public class GameManager : MonoBehaviour
             instance = this;
         }
     }
-    private void Start()
-    {
-       
-    }
+
     private void OnEnable()
     {
         Init();
     }
     public void Init()
     {
+        bossAI.gameObject.SetActive(false);
         checkBosslevel = false;
         countAI = ListAI.Count;
         arrowRotation();
@@ -39,23 +37,22 @@ public class GameManager : MonoBehaviour
     public void arrowRotation()
     {
         arrow.gameObject.SetActive(true);
-    }    
+    }
     private void Update()
     {
         if (player.checkBoss)
         {
             checkBosslevel = true;
         }
-         else
-         {
+        else
+        {
             checkBosslevel = false;
-       }
+        }
     }
     public void ActiveBossAI()
     {
         if (!player.checkBoss)
         {
-            if(gameObject.activeInHierarchy)
             StartCoroutine(DelayActiveBoss());
         }
     }
@@ -76,13 +73,12 @@ public class GameManager : MonoBehaviour
         if (countAI == 0 && !player.isDead)
         {
             bossAI.gameObject.SetActive(false);
-           // DataManager.instance.AddCoin(20);
             UIManager.ins.GameWin();
         }
     }
     public void ActiveBossAILevelMap()
     {
-        if(!checkBosslevel)
+        if (!checkBosslevel)
         {
             bossAI.check = true;
             bossAI.gameObject.SetActive(false);
@@ -90,8 +86,8 @@ public class GameManager : MonoBehaviour
             {
                 UIManager.ins.GameWin();
             }
-        }    
-    }    
+        }
+    }
     public void OnLose()
     {
         player.isDead = true;

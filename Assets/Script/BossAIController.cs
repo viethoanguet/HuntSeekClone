@@ -2,8 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.AI;
 public class BossAIController : MonoBehaviour
 {
+
+    public NavMeshAgent agent;
     public bool check;
     private Vector3 posRandom;
     private int posN;
@@ -12,34 +15,42 @@ public class BossAIController : MonoBehaviour
     [SerializeField] private List<Transform> posAI;
     public GameObject effectboss;
     public AudioClip bossMove;
+    public bool checkAttack;
     private void Start()
     {
+        agent = GetComponent<NavMeshAgent>();
         check = false;
-        //MoveRandom();
         effectboss.gameObject.SetActive(false);
+        checkAttack = false;
     }
     private void OnEnable()
     {
         gameObject.transform.DOKill();
+    }
+    private void Update()
+    {
+        if (Vector3.Distance(gameObject.transform.position, posRandom) < 0.2f)
+        {
+            if (checkAttack)
+            {
+                StartCoroutine(WaitAttack());
+                checkAttack = false;
+            }
+        }
     }
     public void MoveRandom()
     {
         if (!check)
         {
             if (posAI.Count < 1) { return; }
-            // AudioManager.Instance.OnBossMove(bossMove);
             posN = Random.Range(0, posAI.Count);
             posRandom = posAI[posN].position;
             gameObject.transform.forward = Direction(posRandom);
-            transform.DOKill();
-            transform.DOMove(posRandom, SetTime(posRandom)).SetEase(Ease.Linear).OnComplete(() =>
-            {
-                transform.DOKill();
-                StartCoroutine(WaitAttack());
-            });
+            agent.SetDestination(posRandom);
+            checkAttack = true;
         }
-
     }
+
     private Vector3 Direction(Vector3 pos)
     {
         Vector3 direction = pos - gameObject.transform.position;
@@ -58,7 +69,6 @@ public class BossAIController : MonoBehaviour
         posAI.RemoveAt(posN);
         yield return new WaitForSeconds(2f);
         {
-            
             //animBoss.SetAnimRun();
             MoveRandom();
         }
@@ -98,6 +108,7 @@ public class BossAIController : MonoBehaviour
     }
     private void OnDisable()
     {
+        gameObject.SetActive(false);
         StopAllCoroutines();
     }
 }

@@ -19,14 +19,12 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject gameLose;
     [SerializeField] private GameObject BannerDelay321;
     public LevelMap LoadingLevelMap;
-
     private void Awake()
     {
         if (ins == null)
         {
             ins = this;
         }
-
     }
     private void Start()
     {
@@ -36,7 +34,6 @@ public class UIManager : MonoBehaviour
         {
             StartCoroutine(StopRotation());
         }
-
     }
     public void Init()
     {
@@ -64,14 +61,12 @@ public class UIManager : MonoBehaviour
             BannerDelay321.gameObject.SetActive(true);
             BannerDelay321.GetComponent<BannerDelay321>().aaaa();
         }
-
     }
     IEnumerator StopRotation()
     {
         yield return new WaitForSeconds(4f);
         {
             joystick.gameObject.SetActive(true);
-
             //checkBanner = true;
             if (!checkTime)
             {
@@ -87,7 +82,7 @@ public class UIManager : MonoBehaviour
         if (!checkTime)
         {
             timeCountdown -= Time.deltaTime;
-           
+
             if (Mathf.Round(timeCountdown) > 9f)
             {
                 textTime.text = "00:" + Mathf.Round(timeCountdown).ToString();
@@ -96,7 +91,6 @@ public class UIManager : MonoBehaviour
             {
                 textTime.text = "00:0" + Mathf.Round(timeCountdown).ToString();
             }
-           
         }
 
         if (timeCountdown < 0f && !checkTime)
@@ -118,7 +112,6 @@ public class UIManager : MonoBehaviour
                 hideCanvans.gameObject.SetActive(false);
             }
         }
-
     }
 
     public void ButtonHide()
@@ -126,8 +119,7 @@ public class UIManager : MonoBehaviour
         hideCanvans.gameObject.SetActive(false);
         checkTime = true;
         checkBanner = true;
-        // GameManager.instance.ActiveBossAI();
-        LoadingLevelMap.gameManager.ActiveBossAI();
+        GameManager.instance.ActiveBossAI();
         time.gameObject.SetActive(false);
         CameraController.instance.setCam1();
         joystick.gameObject.SetActive(false);
@@ -145,11 +137,11 @@ public class UIManager : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene(0);
+        DataManager.instance.userData.level = 0;
     }
     public void NextLevel()
     {
-        
-        if(DataManager.instance.userData.level<4)
+        if (DataManager.instance.userData.level < 4)
         {
             startGame = true;
             CameraController.instance.setCam2();
@@ -162,18 +154,18 @@ public class UIManager : MonoBehaviour
         }
         else
         {
-            startGame = true;
-            //SceneManager.LoadScene(0);
-            CameraController.instance.setCam2();
+            // startGame = true;
+            SceneManager.LoadScene(0);
+            DataManager.instance.userData.level = 0;
+            /*CameraController.instance.setCam2();
             Init();
             timeCountdown = 15;
             StartCoroutine(StopRotation());
-            DataManager.instance.UpLevel();
-            LoadingLevelMap.RandomLevel();
+            DataManager.instance.UpLevel();*/
+            // LoadingLevelMap.RandomLevel();
 
         }
-
-    }    
+    }
     private void OnDisable()
     {
         StopAllCoroutines();

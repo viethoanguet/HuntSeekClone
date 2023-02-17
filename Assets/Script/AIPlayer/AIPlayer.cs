@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.AI;
 public class AIPlayer : MonoBehaviour
 {
+    public NavMeshAgent agent;
     public bool check;
     private Vector3 posRandom;
     public Transform archor;
@@ -12,10 +14,10 @@ public class AIPlayer : MonoBehaviour
     public ChangeMesh changMesh;
     public AIManager aiMng;
     public AIPlayerAnimation anim;
+
     void Start()
     {
-      
-       // StartCoroutine(WaitMove());
+
     }
     private void OnEnable()
     {
@@ -24,16 +26,29 @@ public class AIPlayer : MonoBehaviour
     }
     public void MoveRandom()
     {
-
         posRandom = aiMng.aIandPosController.randomPos();
-       // posRandom = new Vector3(archor.position.x + Random.Range(-3, 3), 0, archor.position.z + Random.Range(-3, 3));
         gameObject.transform.forward = Direction(posRandom);
         if (!check)
         {
             transform.DOMove(posRandom, SetTime(posRandom)).SetEase(Ease.Linear);
         }
     }
-
+    public Vector3 RandomNavmeshLocation(float radius)
+    {
+        Vector3 randomDirection = Random.insideUnitSphere * radius;
+        randomDirection += transform.position;
+        NavMeshHit nav;
+        Vector3 finalPosition = Vector3.zero;
+        if (NavMesh.SamplePosition(randomDirection, out nav, radius, 1))
+        {
+            finalPosition = nav.position;
+        }
+        return finalPosition;
+    }
+    public void ModeNavMesh()
+    {
+        agent.SetDestination(RandomNavmeshLocation(2f));
+    }
     private Vector3 Direction(Vector3 pos)
     {
         Vector3 direction = pos - gameObject.transform.position;
@@ -47,39 +62,30 @@ public class AIPlayer : MonoBehaviour
         return distance / 1;
     }
 
-
-    private IEnumerator WaitMove()
-    {
-        yield return new WaitForSeconds(3f);
-         MoveRandom();
-    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Arrow"))
         {
-           // EffectManager.Instance.SpawnWhiteEffect(transform.position, null);
             gameObject.transform.DOScale(new Vector3(2, 2, 2), 1f);
-           // UIManager.ins.checkTime = false;
+            // UIManager.ins.checkTime = false;
             gameManager.countAI--;
             StartCoroutine(WaitActiveFalse());
-
         }
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("BossAI"))
+        if (collision.gameObject.CompareTag("BossAI"))
         {
             StartCoroutine(WaitTimeCheckCollision());
             transform.DOKill();
         }
-        if(collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-           //  StartCoroutine(WaitTimeCheckCollision());
-           if(UIManager.ins.checkTime)
+            if (UIManager.ins.checkTime)
             {
                 StartCoroutine(WaitTimeCheckCollision());
-            }    
-           
+            }
+
         }
     }
     private IEnumerator WaitActiveFalse()
@@ -90,12 +96,11 @@ public class AIPlayer : MonoBehaviour
 
     private IEnumerator WaitTimeCheckCollision()
     {
-        
         yield return new WaitForSeconds(1f);
         {
             changMesh.ActiveEffectAI();
             changMesh.ResetModel();
-            EffectManager.Instance.SpawnWhiteEffect(transform.position+ new Vector3(0f,1f,0f), transform);
+            EffectManager.Instance.SpawnWhiteEffect(transform.position + new Vector3(0f, 1f, 0f), transform);
             yield return new WaitForSeconds(0.2f);
             {
                 anim.SetAnimDie();
@@ -107,10 +112,7 @@ public class AIPlayer : MonoBehaviour
                     gameManager.OnWin();
                 }
             }
-           
-
         }
-
     }
     private void OnDisable()
     {

@@ -4,7 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 public class ArrowScript : MonoBehaviour
 {
-    public bool checkArrow=false;
+    public bool checkArrow = false;
     private BoxCollider box;
     private void Start()
     {
@@ -13,6 +13,7 @@ public class ArrowScript : MonoBehaviour
     {
         StartCoroutine(WaitDelayOnEnable());
         box = GetComponent<BoxCollider>();
+        StartCoroutine(StopRotation());
     }
     public void RandomRotation()
     {
@@ -21,7 +22,7 @@ public class ArrowScript : MonoBehaviour
                 //Random.Range(20f, 180f)
                 .SetEase(Ease.Linear)
                 .OnComplete(() => ActiveBox());
-            StartCoroutine(StopRotation());
+       // StartCoroutine(StopRotation());
     }
     public void RandomRotationHunter()
     {
@@ -29,7 +30,7 @@ public class ArrowScript : MonoBehaviour
                 new Vector3(0f, 1440, 0f), 2.5f, RotateMode.FastBeyond360)
                 .SetEase(Ease.Linear)
                 .OnComplete(() => ActiveBox());
-        StartCoroutine(StopRotation());
+      //  StartCoroutine(StopRotation());
     }
     IEnumerator StopRotation()
     {
@@ -45,17 +46,13 @@ public class ArrowScript : MonoBehaviour
         box.enabled = true;
         transform.DOKill();
     }
-    private void OnDisable()
-    {
-       // checkArrow = false;
-       StopAllCoroutines();
-    }
+ 
     IEnumerator WaitDelayOnEnable()
     {
 
         yield return new WaitForSeconds(0.4f);
         {
-          //  checkArrow = false;
+            //  checkArrow = false;
             if (DataManager.instance.userData.level != 2)
             {
                 RandomRotation();

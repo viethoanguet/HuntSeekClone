@@ -18,7 +18,6 @@ public class AIandPosController : MonoBehaviour
 
     private void Start()
     {
-       // InitPosAI();
     }
     private void OnEnable()
     {

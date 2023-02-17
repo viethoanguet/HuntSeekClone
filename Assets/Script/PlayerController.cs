@@ -13,11 +13,10 @@ public class PlayerController : MonoBehaviour
         checkBoss = false;
         isDead = false;
         effect.gameObject.SetActive(false);
-        
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Arrow"))
+        if (other.CompareTag("Arrow"))
         {
             effect.gameObject.SetActive(true);
             effect.transform.DOScale(new Vector3(2, 2, 2), 0.1f);
@@ -25,20 +24,18 @@ public class PlayerController : MonoBehaviour
             checkBoss = true;
             UIManager.ins.SetChecktime();
             UIManager.ins.ActiveBannerDelay321();
-
-        }    
-  
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("AIPlayer"))
         {
-               anim.SetAnimAttack();
+            anim.SetAnimAttack();
         }
         if (collision.gameObject.CompareTag("TableJump"))
         {
-            transform.DOJump(gameObject.transform.position + new Vector3(0f, 0.5f,0.5f),0.4f,1,0.5f);
+            transform.DOJump(gameObject.transform.position + new Vector3(0f, 0.5f, 0.5f), 0.4f, 1, 0.5f);
         }
 
     }

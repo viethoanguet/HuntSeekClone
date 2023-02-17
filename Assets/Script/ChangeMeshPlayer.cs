@@ -11,8 +11,7 @@ public class ChangeMeshPlayer : MonoBehaviour
     [SerializeField] private PlayerController player;
     public Material roomtexure;
     public GameObject ModelPlayer;
-    //public GameObject skin;
-    // public GameObject skinNormal;
+
     private void OnEnable()
     {
         modelFilter.gameObject.SetActive(false);
@@ -41,14 +40,12 @@ public class ChangeMeshPlayer : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
         {
-
             player.ActiveEffect();
           //  gameObject.transform.DOScale(new Vector3(1, 1, 1), 0.2f);
             yield return new WaitForSeconds(0.2f);
             {
                 ChangeMeshModel();
-            }
-           
+            }           
         }
     }
     private void OnDisable()

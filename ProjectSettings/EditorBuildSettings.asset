@@ -14,5 +14,17 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GamePlay.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/GamePlay 1.unity
+    guid: e25fc5bf8eb4a244f943880b6d457cc7
+  - enabled: 1
+    path: Assets/Scenes/GamePlay 2.unity
+    guid: 9407e05a4bc57f2469f99495d234682d
+  - enabled: 1
+    path: Assets/Scenes/GamePlay 3.unity
+    guid: 7decfb0fa9732ff46a2a4b74dfe4e708
+  - enabled: 1
+    path: Assets/Scenes/GamePlay 4.unity
+    guid: 3c7a04b27ba48164ea0bf05ad555020e
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: f1ced3c41bc06064788c07be17ce3e2c, type: 2}
