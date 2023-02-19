@@ -93,9 +93,10 @@ public class GameManager : MonoBehaviour
         player.isDead = true;
         UIManager.ins.GameLose();
         checkBosslevel = true;
-    }
+    }  
     private void OnDisable()
     {
         StopAllCoroutines();
     }
+
 }

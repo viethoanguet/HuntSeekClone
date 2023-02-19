@@ -8,7 +8,7 @@ public class Door : MonoBehaviour
     public void rotationDoor()
     {
         gameObject.transform.DORotate(
-       new Vector3(0f, -120f, 0), 1.5f)
+       new Vector3(0f, -120f, 0f), 3f)
        .SetEase(Ease.Linear)
        .OnComplete(() => rotationDoorComback());
         AudioManager.Instance.OndoorPlay(musicdoor);

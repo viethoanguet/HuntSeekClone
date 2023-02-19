@@ -85,7 +85,6 @@ public class AIPlayer : MonoBehaviour
             {
                 StartCoroutine(WaitTimeCheckCollision());
             }
-
         }
     }
     private IEnumerator WaitActiveFalse()

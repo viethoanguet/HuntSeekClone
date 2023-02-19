@@ -31,7 +31,11 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("AIPlayer"))
         {
-            anim.SetAnimAttack();
+            if(checkBoss)
+            {
+                anim.SetAnimAttack();
+            }    
+
         }
         if (collision.gameObject.CompareTag("TableJump"))
         {

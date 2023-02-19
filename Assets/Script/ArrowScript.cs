@@ -6,9 +6,6 @@ public class ArrowScript : MonoBehaviour
 {
     public bool checkArrow = false;
     private BoxCollider box;
-    private void Start()
-    {
-    }
     private void OnEnable()
     {
         StartCoroutine(WaitDelayOnEnable());
@@ -17,12 +14,10 @@ public class ArrowScript : MonoBehaviour
     }
     public void RandomRotation()
     {
-        gameObject.transform.DORotate(
-                new Vector3(0f, 1600, 0f), 2.5f, RotateMode.FastBeyond360)
+        gameObject.transform.DORotate(new Vector3(0f, 1600, 0f), 2.5f, RotateMode.FastBeyond360)
                 //Random.Range(20f, 180f)
                 .SetEase(Ease.Linear)
                 .OnComplete(() => ActiveBox());
-       // StartCoroutine(StopRotation());
     }
     public void RandomRotationHunter()
     {
@@ -30,7 +25,6 @@ public class ArrowScript : MonoBehaviour
                 new Vector3(0f, 1440, 0f), 2.5f, RotateMode.FastBeyond360)
                 .SetEase(Ease.Linear)
                 .OnComplete(() => ActiveBox());
-      //  StartCoroutine(StopRotation());
     }
     IEnumerator StopRotation()
     {
@@ -49,9 +43,22 @@ public class ArrowScript : MonoBehaviour
  
     IEnumerator WaitDelayOnEnable()
     {
-
         yield return new WaitForSeconds(0.4f);
         {
+   /*         switch(DataManager.instance.userData.level)
+            {
+                case 1:
+                    {
+                        RandomRotation();
+                        break;
+                    }
+                case 2:
+                    {
+                        RandomRotation();
+                        break;
+                    }
+                default;
+            }  */  
             //  checkArrow = false;
             if (DataManager.instance.userData.level != 2)
             {
