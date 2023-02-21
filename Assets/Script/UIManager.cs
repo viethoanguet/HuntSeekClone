@@ -139,6 +139,10 @@ public class UIManager : MonoBehaviour
         SceneManager.LoadScene(0);
         DataManager.instance.userData.level = 0;
     }
+    public void BackHome()
+    {
+        SceneManager.LoadScene(1);
+    }    
     public void NextLevel()
     {
         if (DataManager.instance.userData.level < 4)

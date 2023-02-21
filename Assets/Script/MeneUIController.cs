@@ -8,11 +8,18 @@ public class MeneUIController : MonoBehaviour
 {
     public TMP_Text btnCoin;
     public TMP_Text levelcurrent;
-    public GameObject setting;
+    public Button setting;
+    public Button btnShop;
+    public Button btnDaily;
+    
     private void Start()
     {
         LoadCoin();
         LoadTextLevel();
+    }
+    public void Init()
+    {
+        
     }
     public void BtnStartGameMenu()
     {
