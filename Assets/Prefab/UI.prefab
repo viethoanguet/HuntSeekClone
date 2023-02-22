@@ -3447,6 +3447,8 @@ MonoBehaviour:
   coinEndvalue: {fileID: 5300842820165182756}
   coinRotate: {fileID: 0}
   btnSumcoin: {fileID: 0}
+  check: 0
+  listXCoin: []
 --- !u!1 &4513082921321124764
 GameObject:
   m_ObjectHideFlags: 0
@@ -5806,6 +5808,8 @@ MonoBehaviour:
   coinEndvalue: {fileID: 8703421023464819578}
   coinRotate: {fileID: 8703421022725527563}
   btnSumcoin: {fileID: 8703421023933045576}
+  check: 0
+  listXCoin: []
 --- !u!1 &8703421022294681155
 GameObject:
   m_ObjectHideFlags: 0
@@ -6993,14 +6997,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8703421022725527563}
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0.64010966, w: 0.7682836}
   m_LocalPosition: {x: 0, y: 0, z: 3}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 8703421021837188511}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 79.6}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 9, y: -87}
@@ -10505,7 +10509,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9085994304833027495}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d0390bd8b8ffd640b34fe25065ff1df, type: 3}
   m_Name: 

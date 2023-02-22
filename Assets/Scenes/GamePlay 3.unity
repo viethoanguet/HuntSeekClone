@@ -1445,11 +1445,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2940282395010100356, guid: 29b0ebe637827d244bc59e1a8d00c7f8, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000014644579
+      value: 0.000000014644582
       objectReference: {fileID: 0}
     - target: {fileID: 2940282395010100356, guid: 29b0ebe637827d244bc59e1a8d00c7f8, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.00000000903304
+      value: -0.000000009033042
       objectReference: {fileID: 0}
     - target: {fileID: 2940282395010100356, guid: 29b0ebe637827d244bc59e1a8d00c7f8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1489,11 +1489,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2940282396235706846, guid: 29b0ebe637827d244bc59e1a8d00c7f8, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000014644579
+      value: 0.000000014644582
       objectReference: {fileID: 0}
     - target: {fileID: 2940282396235706846, guid: 29b0ebe637827d244bc59e1a8d00c7f8, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.00000000903304
+      value: -0.000000009033042
       objectReference: {fileID: 0}
     - target: {fileID: 3373401056787484045, guid: 29b0ebe637827d244bc59e1a8d00c7f8, type: 3}
       propertyPath: modelChange.Array.data[0]
@@ -1659,6 +1659,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8302825560248926829, guid: 29b0ebe637827d244bc59e1a8d00c7f8, type: 3}
+      propertyPath: changSkin
+      value: 
+      objectReference: {fileID: 2095754110}
     - target: {fileID: 8467118208381720616, guid: 29b0ebe637827d244bc59e1a8d00c7f8, type: 3}
       propertyPath: agent
       value: 
@@ -1692,6 +1696,17 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &2095754110 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1029054965336630351, guid: 29b0ebe637827d244bc59e1a8d00c7f8, type: 3}
+  m_PrefabInstance: {fileID: 2095754107}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b48bf6614ae40734bb2d9c3773476951, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &695054087311498020
 PrefabInstance:
   m_ObjectHideFlags: 0

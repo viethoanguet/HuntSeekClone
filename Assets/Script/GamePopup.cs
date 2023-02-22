@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GamePopup :MonoBehaviour
+public class GamePopup : MonoBehaviour
 {
     public Canvas canvas;
     public static GamePopup instance;
@@ -16,15 +16,21 @@ public class GamePopup :MonoBehaviour
     }
     public PopupSetting popupSettingPrefab;
     public PopupShop popupShopPrefab;
-
     public void ShowPopupSetting()
     {
-      
-            Instantiate(popupSettingPrefab, canvas.transform, false);
-    }    
+        popupSettingPrefab.gameObject.SetActive(true);
+        //Instantiate(popupSettingPrefab, canvas.transform, false);
+    }
     public void ShowPopupShop()
     {
-        Instantiate(popupShopPrefab, canvas.transform, false);
-    }    
+        popupShopPrefab.gameObject.SetActive(true);
+        //Instantiate(popupShopPrefab, canvas.transform, false);
+    }
+    public void OnClickSkin()
+    {
+        Debug.Log("buy correct");
+        DataManager.instance.UpSkin();
+    }
+
 
 }

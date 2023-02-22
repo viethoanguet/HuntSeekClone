@@ -67,6 +67,11 @@ public class DataManager : MonoBehaviour
         SaveUserData();
         LoadLevelData();
     }
+    public void UpSkin()
+    {
+        userData.currentCharacterID = userData.currentCharacterID + 1;
+        SaveUserData();
+    }    
     public void AddCoin(int coin)
     {
         if (userData.coin + coin >= 0)
@@ -118,9 +123,7 @@ public class DataManager : MonoBehaviour
     {
         public int coin = 200;
         public int level = 0;
-        // public string userName = "UnknowUser";
-        //public int currentCharacterID = 0;
-        //  public List<int> unlockedCharacterIDs = new List<int>();
+       public int currentCharacterID = 0;
     }
     public class LevelData
     {

@@ -11,6 +11,7 @@ public class PopupSetting : MonoBehaviour
     public SettingItem vibrateSetting;
 
     public Button btnClose;
+
     public void OnClose()
     {
         gameObject.SetActive(false);

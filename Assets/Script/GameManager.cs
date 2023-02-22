@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private ArrowScript arrow;
     [SerializeField] private BossAIController bossAI;
     public CameraController cameraController;
+    public ChangeMeshPlayer changSkin;
     public float timePlay;
     public float countAI;
     public Door door;
@@ -21,6 +22,10 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
         }
+        if(DataManager.instance.userData.currentCharacterID>0)
+        {
+            changSkin.UpdateSkin();
+        }    
     }
 
     private void OnEnable()

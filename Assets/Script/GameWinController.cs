@@ -16,8 +16,8 @@ public class GameWinController : MonoBehaviour
     public List<GameObject> listXCoin;
     private void Awake()
     {
-        btnSumcoin.interactable = true;
-        OnChooseAward();
+      
+      //  OnChooseAward();
         check = true;
     }
     public void OnChooseAward()

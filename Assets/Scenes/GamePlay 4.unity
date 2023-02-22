@@ -1437,6 +1437,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6030038940081278983, guid: 854c06afc7c7e9145bc76e00ca37544a, type: 3}
+      propertyPath: changSkin
+      value: 
+      objectReference: {fileID: 1262650957}
     - target: {fileID: 6131563527161186882, guid: 854c06afc7c7e9145bc76e00ca37544a, type: 3}
       propertyPath: agent
       value: 
@@ -1518,6 +1522,17 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &1262650957 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3373617942872159781, guid: 854c06afc7c7e9145bc76e00ca37544a, type: 3}
+  m_PrefabInstance: {fileID: 1262650954}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b48bf6614ae40734bb2d9c3773476951, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1318919838
 GameObject:
   m_ObjectHideFlags: 0
