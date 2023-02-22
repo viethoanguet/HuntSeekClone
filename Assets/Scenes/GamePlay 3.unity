@@ -1623,6 +1623,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -3.82
       objectReference: {fileID: 0}
+    - target: {fileID: 5630195663870938967, guid: 29b0ebe637827d244bc59e1a8d00c7f8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5630195663870938967, guid: 29b0ebe637827d244bc59e1a8d00c7f8, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a1f8422e23f9d8646b39b60fc7139644, type: 2}
     - target: {fileID: 6576958514936093090, guid: 29b0ebe637827d244bc59e1a8d00c7f8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.8

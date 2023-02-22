@@ -8,54 +8,42 @@ public class GameWinController : MonoBehaviour
 {
     // Start is called before the first frame update
     public TMP_Text textcoin;
-    public GameObject coin;
-    public GameObject coinEndvalue;
     public GameObject coinRotate;
     public Button btnSumcoin;
-    public bool check;
-    public List<GameObject> listXCoin;
+    public spin spinCoin;
+    public GameObject listCoin;
+    public Animator listDocoin;
     private void Awake()
     {
-      
-      //  OnChooseAward();
-        check = true;
+        spinCoin.gameObject.SetActive(true);
+        btnSumcoin.interactable = true;
+        listCoin.gameObject.SetActive(false);
     }
-    public void OnChooseAward()
-    {
-        if (check)
-        {
-            coinRotate.transform.DORotate(new Vector3(0, 0, 85), 1,RotateMode.Fast).SetEase(Ease.Linear)
-                //.SetLoops(-1, LoopType.Yoyo)
-                .OnComplete(()=>LoopsChoose());
-        }
-    }
-    public void LoopsChoose()
-    {
-        coinRotate.transform.DORotate(new Vector3(0, 0, -85), 1, RotateMode.Fast).SetEase(Ease.Linear)
-             .OnComplete(() => OnChooseAward());
-    }
+
     private void Update()
     {
         textcoin.text = DataManager.instance.userData.coin.ToString();
     }
     public void SumCoin()
     {
-        check = false;
         btnSumcoin.interactable = false;
-        coinMove();
-        DataManager.instance.userData.coin += 250;
-        for(int i=0;i<listXCoin.Count;i++)
-        {
-           // if()
-        }
-    }    
-    public void coinMove()
-    {
-        coin.transform.DOMove(coinEndvalue.transform.position, 1.5f)
-            .OnComplete(()=>activeCoin());
-    }    
-    public void activeCoin()
-    {
-        coin.gameObject.SetActive(false);
+        DataManager.instance.userData.coin += spinCoin.valueBonus * 100;
+        spinCoin.gameObject.SetActive(false);
+        StartCoroutine(WaitneexLevel());
+        listCoin.gameObject.SetActive(true);
     }
+    IEnumerator WaitneexLevel()
+    {
+        yield return new WaitForSeconds(0.5f);
+        {
+            listCoin.gameObject.SetActive(false);
+        }
+
+        yield return new WaitForSeconds(2f);
+        {
+            UIManager.ins.NextLevel();
+           
+        }
+    }
+  
 }

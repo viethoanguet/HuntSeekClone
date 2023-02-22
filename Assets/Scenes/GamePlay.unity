@@ -760,6 +760,14 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8115533919747078055, guid: 9207e5aa648dceb4abff9c27406a928a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8115533919747078055, guid: 9207e5aa648dceb4abff9c27406a928a, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a1f8422e23f9d8646b39b60fc7139644, type: 2}
     - target: {fileID: 8975337096173759711, guid: 9207e5aa648dceb4abff9c27406a928a, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0

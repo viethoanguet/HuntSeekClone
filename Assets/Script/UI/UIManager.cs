@@ -147,6 +147,7 @@ public class UIManager : MonoBehaviour
     {
         if (DataManager.instance.userData.level < 4)
         {
+            DataManager.instance.userData.coin += 100;
             startGame = true;
             CameraController.instance.setCam2();
             Init();

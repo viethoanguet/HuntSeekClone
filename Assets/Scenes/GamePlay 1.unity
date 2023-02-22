@@ -919,6 +919,14 @@ PrefabInstance:
       propertyPath: modelChange.Array.data[4]
       value: 
       objectReference: {fileID: 4300000, guid: 3e8bcc164cbda26479cda7e1949cfd5a, type: 3}
+    - target: {fileID: 5151691643169518727, guid: 94d36e345279e4540a1c1ce49b12d6b6, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5151691643169518727, guid: 94d36e345279e4540a1c1ce49b12d6b6, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a1f8422e23f9d8646b39b60fc7139644, type: 2}
     - target: {fileID: 5214985293267027031, guid: 94d36e345279e4540a1c1ce49b12d6b6, type: 3}
       propertyPath: modelChange.Array.data[0]
       value: 
