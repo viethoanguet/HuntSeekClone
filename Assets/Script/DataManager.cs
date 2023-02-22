@@ -10,6 +10,7 @@ public class DataManager : MonoBehaviour
     public static DataManager instance;
     public Action<int> GoldCallback;
     public AssetManager assetManager;
+ 
 
     private void Awake()
     {
@@ -85,6 +86,33 @@ public class DataManager : MonoBehaviour
         }
     }
 
+
+    public bool IsSoundOn()
+    {
+        return PlayerPrefs.GetInt("SOUND", 1) == 1;
+    }
+    public bool IsMusicOn()
+    {
+        return PlayerPrefs.GetInt("MUSIC", 1) == 1;
+    }
+    public bool IsVibrationOn()
+    {
+        return PlayerPrefs.GetInt("VIBRATION", 1) == 1;
+    }
+    public void TurnSound()
+    {
+        PlayerPrefs.SetInt("SOUND", IsSoundOn() ? 0 : 1);
+    }
+    public void TurnMusic()
+    {
+        PlayerPrefs.SetInt("MUSIC", IsMusicOn() ? 0 : 1);
+    }
+    public void TurnVibration()
+    {
+        PlayerPrefs.SetInt("VIBRATION", IsVibrationOn() ? 0 : 1);
+    }
+
+
     [System.Serializable]
     public class UserData
     {
@@ -98,5 +126,6 @@ public class DataManager : MonoBehaviour
     {
         public int level = 0;
     }
+   
 
 }

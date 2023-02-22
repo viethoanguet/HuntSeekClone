@@ -41,7 +41,13 @@ public class PlayerController : MonoBehaviour
         {
             transform.DOJump(gameObject.transform.position + new Vector3(0f, 0.5f, 0.5f), 0.4f, 1, 0.5f);
         }
-
+        if(collision.gameObject.CompareTag("Item"))
+        {
+            if(checkBoss)
+            {
+                anim.SetAnimAttack();
+            }    
+        }    
     }
     public void ActiveEffect()
     {

@@ -23,7 +23,8 @@ public class MeneUIController : MonoBehaviour
     }
     public void BtnStartGameMenu()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene((DataManager.instance.userData.level+2));
+       // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     public void LoadCoin()
     {
@@ -34,5 +35,12 @@ public class MeneUIController : MonoBehaviour
         levelcurrent.text ="Level "+ (DataManager.instance.userData.level+1).ToString();
     }    
 
-    
+    public void ShowSetting()
+    {
+        GamePopup.instance.ShowPopupSetting();
+    }    
+    public void ShowPopupShop()
+    {
+        GamePopup.instance.ShowPopupShop();
+    }    
 }
