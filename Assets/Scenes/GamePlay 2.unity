@@ -399,6 +399,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7051836242747614558, guid: b673e2a85ffbd9a4fa0bdaf93e061bd9, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7214117969717786234, guid: b673e2a85ffbd9a4fa0bdaf93e061bd9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -889,11 +893,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4294483318636034500, guid: 058ca7b6c780e7b4e92459adadcfd66b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000014866718
+      value: 0.000000014866711
       objectReference: {fileID: 0}
     - target: {fileID: 4294483318636034500, guid: 058ca7b6c780e7b4e92459adadcfd66b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000008662588
+      value: -0.000000008662584
       objectReference: {fileID: 0}
     - target: {fileID: 4294483318636034503, guid: 058ca7b6c780e7b4e92459adadcfd66b, type: 3}
       propertyPath: m_Lens.FieldOfView
@@ -929,11 +933,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4294483319325451422, guid: 058ca7b6c780e7b4e92459adadcfd66b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000014866718
+      value: 0.000000014866711
       objectReference: {fileID: 0}
     - target: {fileID: 4294483319325451422, guid: 058ca7b6c780e7b4e92459adadcfd66b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000008662588
+      value: -0.000000008662584
       objectReference: {fileID: 0}
     - target: {fileID: 4905588856175754512, guid: 058ca7b6c780e7b4e92459adadcfd66b, type: 3}
       propertyPath: m_TagString

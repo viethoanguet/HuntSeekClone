@@ -13,7 +13,7 @@ public class GameWinController : MonoBehaviour
     public spin spinCoin;
     public GameObject listCoin;
     public Animator listDocoin;
-    private void Awake()
+    private void Start()
     {
         spinCoin.gameObject.SetActive(true);
         btnSumcoin.interactable = true;
@@ -39,7 +39,7 @@ public class GameWinController : MonoBehaviour
             listCoin.gameObject.SetActive(false);
         }
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.5f);
         {
             UIManager.ins.NextLevel();
            

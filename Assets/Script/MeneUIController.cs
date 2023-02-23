@@ -17,6 +17,11 @@ public class MeneUIController : MonoBehaviour
         LoadCoin();
         LoadTextLevel();
     }
+    private void Update()
+    {
+        LoadCoin();
+        LoadTextLevel();
+    }
     public void Init()
     {
         

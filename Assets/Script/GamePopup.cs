@@ -16,6 +16,7 @@ public class GamePopup : MonoBehaviour
     }
     public PopupSetting popupSettingPrefab;
     public PopupShop popupShopPrefab;
+    public PopupNewSkin popupnewSkinPrefab;
     public void ShowPopupSetting()
     {
         popupSettingPrefab.gameObject.SetActive(true);
@@ -26,9 +27,12 @@ public class GamePopup : MonoBehaviour
         popupShopPrefab.gameObject.SetActive(true);
         //Instantiate(popupShopPrefab, canvas.transform, false);
     }
+    public void ShowPopupNewSkin()
+    {
+        popupnewSkinPrefab.gameObject.SetActive(true);
+    }    
     public void OnClickSkin()
     {
-        Debug.Log("buy correct");
         DataManager.instance.UpSkin();
     }
 

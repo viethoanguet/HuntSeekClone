@@ -138,6 +138,7 @@ public class UIManager : MonoBehaviour
     {
         SceneManager.LoadScene(0);
         DataManager.instance.userData.level = 0;
+        DataManager.instance.userData.coin = 200;
     }
     public void BackHome()
     {

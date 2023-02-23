@@ -498,6 +498,7 @@ GameObject:
   - component: {fileID: 4495728363405028050}
   - component: {fileID: 6602791630988210088}
   - component: {fileID: 3237508942392753374}
+  - component: {fileID: 2595843712738217835}
   m_Layer: 5
   m_Name: btnBuyCoinPack2
   m_TagString: Untagged
@@ -608,9 +609,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8128996459393989704}
-        m_TargetAssemblyTypeName: PopupShop, Assembly-CSharp
-        m_MethodName: Click
+      - m_Target: {fileID: 2595843712738217835}
+        m_TargetAssemblyTypeName: BtnCoinShop, Assembly-CSharp
+        m_MethodName: OnclickBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -727,6 +728,20 @@ MonoBehaviour:
   optionalRotationMode: 0
   optionalScrambleMode: 0
   optionalString: 
+--- !u!114 &2595843712738217835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952686570356260230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfa4dae794b227f4491aafaa584ab793, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btn: {fileID: 6602791630988210088}
+  txtCoin: 600
 --- !u!1 &969127288461615165
 GameObject:
   m_ObjectHideFlags: 0
@@ -1350,6 +1365,7 @@ GameObject:
   - component: {fileID: 879739691325609218}
   - component: {fileID: 7293470520073733246}
   - component: {fileID: 6442138532034263654}
+  - component: {fileID: 5449129741307820302}
   m_Layer: 5
   m_Name: btnBuyCoinX2
   m_TagString: Untagged
@@ -1460,9 +1476,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8128996459393989704}
-        m_TargetAssemblyTypeName: PopupShop, Assembly-CSharp
-        m_MethodName: Click
+      - m_Target: {fileID: 5449129741307820302}
+        m_TargetAssemblyTypeName: BtnCoinShop, Assembly-CSharp
+        m_MethodName: OnclickBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1579,6 +1595,20 @@ MonoBehaviour:
   optionalRotationMode: 0
   optionalScrambleMode: 0
   optionalString: 
+--- !u!114 &5449129741307820302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871113001487756151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfa4dae794b227f4491aafaa584ab793, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btn: {fileID: 7293470520073733246}
+  txtCoin: 1000
 --- !u!1 &1894976519343117663
 GameObject:
   m_ObjectHideFlags: 0
@@ -2523,6 +2553,7 @@ GameObject:
   - component: {fileID: 3134417052669577293}
   - component: {fileID: 4392949604013710687}
   - component: {fileID: 4547525304219222231}
+  - component: {fileID: 4400017300145260596}
   m_Layer: 5
   m_Name: btnBuyCoinPack1
   m_TagString: Untagged
@@ -2633,9 +2664,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8128996459393989704}
-        m_TargetAssemblyTypeName: PopupShop, Assembly-CSharp
-        m_MethodName: Click
+      - m_Target: {fileID: 4400017300145260596}
+        m_TargetAssemblyTypeName: BtnCoinShop, Assembly-CSharp
+        m_MethodName: OnclickBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2752,6 +2783,20 @@ MonoBehaviour:
   optionalRotationMode: 0
   optionalScrambleMode: 0
   optionalString: 
+--- !u!114 &4400017300145260596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4192752083941436300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfa4dae794b227f4491aafaa584ab793, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btn: {fileID: 4392949604013710687}
+  txtCoin: 500
 --- !u!1 &4442077017094898672
 GameObject:
   m_ObjectHideFlags: 0

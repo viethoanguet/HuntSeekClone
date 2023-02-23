@@ -98,6 +98,7 @@ public class GameManager : MonoBehaviour
         player.isDead = true;
         UIManager.ins.GameLose();
         checkBosslevel = true;
+        bossAI.gameObject.SetActive(false);
     }  
     private void OnDisable()
     {

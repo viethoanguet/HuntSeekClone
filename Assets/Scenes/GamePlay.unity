@@ -534,11 +534,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1607689927660013870, guid: 9207e5aa648dceb4abff9c27406a928a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.024922168
+      value: -0.024922134
       objectReference: {fileID: 0}
     - target: {fileID: 1607689927660013870, guid: 9207e5aa648dceb4abff9c27406a928a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.015461104
+      value: 0.015461083
       objectReference: {fileID: 0}
     - target: {fileID: 1607689929051939618, guid: 9207e5aa648dceb4abff9c27406a928a, type: 3}
       propertyPath: m_Lens.FieldOfView
@@ -582,11 +582,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1607689929087374452, guid: 9207e5aa648dceb4abff9c27406a928a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.024922168
+      value: -0.024922134
       objectReference: {fileID: 0}
     - target: {fileID: 1607689929087374452, guid: 9207e5aa648dceb4abff9c27406a928a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.015461104
+      value: 0.015461083
       objectReference: {fileID: 0}
     - target: {fileID: 2023050428387601057, guid: 9207e5aa648dceb4abff9c27406a928a, type: 3}
       propertyPath: m_Name
@@ -1508,6 +1508,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 748709326}
+    - target: {fileID: 7051836242747614558, guid: b673e2a85ffbd9a4fa0bdaf93e061bd9, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7214117969717786234, guid: b673e2a85ffbd9a4fa0bdaf93e061bd9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

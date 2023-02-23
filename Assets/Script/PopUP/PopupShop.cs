@@ -11,9 +11,7 @@ public class PopupShop : MonoBehaviour
     public Button btnskin3;
     private void Start()
     {
-        btnskin1.interactable = true;
-        btnskin2.interactable = true;
-        btnskin3.interactable = true;
+        
     }
     public void Click()
     {
