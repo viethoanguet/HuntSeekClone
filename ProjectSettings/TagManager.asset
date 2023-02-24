@@ -9,6 +9,7 @@ TagManager:
   - Item
   - BossAI
   - TableJump
+  - Table
   layers:
   - Default
   - TransparentFX

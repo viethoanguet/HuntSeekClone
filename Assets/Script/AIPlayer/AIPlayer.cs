@@ -14,7 +14,7 @@ public class AIPlayer : MonoBehaviour
     public ChangeMesh changMesh;
     public AIManager aiMng;
     public AIPlayerAnimation anim;
-
+    public bool checkOneshot;
     void Start()
     {
 
@@ -23,6 +23,7 @@ public class AIPlayer : MonoBehaviour
     {
         isDealAI = false;
         check = false;
+        checkOneshot = false;
     }
     public void MoveRandom()
     {
@@ -86,6 +87,22 @@ public class AIPlayer : MonoBehaviour
                 StartCoroutine(WaitTimeCheckCollision());
             }
         }
+        if (collision.gameObject.CompareTag("TableJump"))
+        {
+            transform.DOJump(gameObject.transform.position + new Vector3(0f, 0.5f, 0.5f), 0.4f, 1, 0.5f);
+        }
+    }
+    private void OnCollisionStay(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Table"))
+        {          
+            if (gameManager.AttackAIJumpTable())
+            {
+                gameManager.table.checkTarget = false;
+                StartCoroutine(WaitTimeCheckCollision());
+                Debug.Log("1111111");
+            }
+        }
     }
     private IEnumerator WaitActiveFalse()
     {
@@ -95,7 +112,7 @@ public class AIPlayer : MonoBehaviour
 
     private IEnumerator WaitTimeCheckCollision()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.7f);
         {
             changMesh.ActiveEffectAI();
             changMesh.ResetModel();

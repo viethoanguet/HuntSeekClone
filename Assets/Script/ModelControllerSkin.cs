@@ -35,7 +35,12 @@ public class ModelControllerSkin : MonoBehaviour
                     break;
                 }
             default:
-                return;
+                {
+                    Instantiate(listSkin[1], gameObject.transform);
+                    modelDefault.gameObject.SetActive(false);
+                    break;
+                }
+               // return;
         }
 
     }

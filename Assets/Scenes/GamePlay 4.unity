@@ -1438,6 +1438,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6030038940081278983, guid: 854c06afc7c7e9145bc76e00ca37544a, type: 3}
+      propertyPath: table
+      value: 
+      objectReference: {fileID: 1262650959}
+    - target: {fileID: 6030038940081278983, guid: 854c06afc7c7e9145bc76e00ca37544a, type: 3}
       propertyPath: changSkin
       value: 
       objectReference: {fileID: 1262650957}
@@ -1541,6 +1545,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b48bf6614ae40734bb2d9c3773476951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1262650958 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4768105085703505670, guid: 854c06afc7c7e9145bc76e00ca37544a, type: 3}
+  m_PrefabInstance: {fileID: 1262650954}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1262650959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262650958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57a15603afda7a74da0ac594c183703a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkTarget: 0
 --- !u!1 &1318919838
 GameObject:
   m_ObjectHideFlags: 0

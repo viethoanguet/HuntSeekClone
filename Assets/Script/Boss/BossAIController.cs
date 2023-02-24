@@ -16,6 +16,8 @@ public class BossAIController : MonoBehaviour
     public GameObject effectboss;
     public AudioClip bossMove;
     public bool checkAttack;
+
+
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -85,12 +87,6 @@ public class BossAIController : MonoBehaviour
         {
             animBoss.SetAnimDamage();
             Debug.Log("item");
-            // StartCoroutine(WaitAttack());
-        }
-        if (collision.gameObject.CompareTag("AIPlayer"))
-        {
-            //animBoss.SetAnimDamage();
-            // StartCoroutine(WaitAttack());
         }
     }
 

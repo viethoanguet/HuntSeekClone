@@ -160,16 +160,9 @@ public class UIManager : MonoBehaviour
         }
         else
         {
-            // startGame = true;
             SceneManager.LoadScene(0);
             DataManager.instance.userData.level = 0;
-            /*CameraController.instance.setCam2();
-            Init();
-            timeCountdown = 15;
-            StartCoroutine(StopRotation());
-            DataManager.instance.UpLevel();*/
-            // LoadingLevelMap.RandomLevel();
-
+            DataManager.instance.userData.coin = 200;
         }
     }
     private void OnDisable()

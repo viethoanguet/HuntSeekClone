@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public float timePlay;
     public float countAI;
     public Door door;
+    public Table table;
     private void Awake()
     {
         if (instance == null)
@@ -73,6 +74,14 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+    public bool AttackAIJumpTable()
+    {
+        if (table.checkTarget)
+        {
+            return true;
+        }
+        return false;
+    }    
     public void OnWin()
     {
         if (countAI == 0 && !player.isDead)
