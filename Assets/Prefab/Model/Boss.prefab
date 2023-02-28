@@ -1526,6 +1526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d267d49916128014e9c095200452bb7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 0}
   check: 0
   archor: {fileID: 0}
   animBoss: {fileID: 6246963611072390828}
@@ -1537,6 +1538,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   effectboss: {fileID: 5952853229540245375}
+  bossMove: {fileID: 0}
+  checkAttack: 0
 --- !u!136 &827967974524581945
 CapsuleCollider:
   m_ObjectHideFlags: 0

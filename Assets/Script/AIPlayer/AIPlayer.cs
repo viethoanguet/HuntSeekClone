@@ -100,7 +100,6 @@ public class AIPlayer : MonoBehaviour
             {
                 gameManager.table.checkTarget = false;
                 StartCoroutine(WaitTimeCheckCollision());
-                Debug.Log("1111111");
             }
         }
     }
